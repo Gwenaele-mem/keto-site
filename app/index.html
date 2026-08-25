@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/app/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Suivi et coach kéto — simple, en français.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="My Keto">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>My Keto Assistant</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!--
+    Défense anti-cache : ce build est servi SANS service worker (--pwa-strategy=none).
+    Mais un ancien service worker (issu d'un build PWA précédent) peut rester installé
+    dans le navigateur et continuer à servir une version périmée de l'app. On le
+    désinscrit et on vide ses caches au chargement, puis on recharge une seule fois.
+  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (regs) {
+        var had = regs.length > 0;
+        regs.forEach(function (r) { r.unregister(); });
+        if (had && 'caches' in window) {
+          caches.keys().then(function (keys) { keys.forEach(function (k) { caches.delete(k); }); });
+        }
+        if (had && !sessionStorage.getItem('sw_cleared')) {
+          sessionStorage.setItem('sw_cleared', '1');
+          location.reload();
+        }
+      }).catch(function () {});
+    }
+  </script>
+</head>
+<body>
+  <!-- Écran d'attente pendant le chargement du moteur (avant Flutter) :
+       fond beurre + mascotte, retiré au premier rendu de l'app. -->
+  <style>
+    #attente {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #FFF1BF;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 18px;
+      transition: opacity .35s ease;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    #attente img { width: min(46vw, 230px); height: auto; border-radius: 18px; }
+    #attente .nom { color: #1F3D2B; font-size: 21px; font-weight: 700; }
+    #attente .barre {
+      width: 120px; height: 5px; border-radius: 3px; background: #F3E3A6;
+      overflow: hidden; position: relative;
+    }
+    #attente .barre::after {
+      content: ''; position: absolute; top: 0; left: -40%;
+      width: 40%; height: 100%; border-radius: 3px; background: #2F8F5B;
+      animation: attenteGlisse 1.1s ease-in-out infinite;
+    }
+    @keyframes attenteGlisse { to { left: 100%; } }
+  </style>
+  <div id="attente">
+    <img src="splash_beurre.jpg" alt="">
+    <div class="nom">My Keto Assistant</div>
+    <div class="barre"></div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var a = document.getElementById('attente');
+      if (a) { a.style.opacity = '0'; setTimeout(function () { a.remove(); }, 380); }
+    });
+  </script>
+  <script>
+    // Serveur de test local : les fichiers de données (catalogue de recettes,
+    // table CIQUAL) sont lus par Flutter à des URL SANS numéro de version. Le
+    // navigateur pouvait donc afficher le NOUVEAU code avec les ANCIENNES
+    // données — vécu le 4 août 2026 : « je n'ai aucune entrée dans les 1 200
+    // recettes », alors que 61 entrées venaient d'être ajoutées. On force ici,
+    // EN LOCAL uniquement, une relecture réseau de ces fichiers AVANT de
+    // démarrer Flutter : la copie en cache ne peut plus gagner.
+    (function () {
+      function demarrer() {
+        var s = document.createElement('script');
+        s.src = 'flutter_bootstrap.js';
+        s.async = true;
+        document.body.appendChild(s);
+      }
+      var local = ['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) >= 0;
+      if (!local || !window.fetch) { demarrer(); return; }
+      var donnees = ['assets/assets/recettes.json', 'assets/assets/recettes_generees.json'];
+      Promise.all(donnees.map(function (f) {
+        return fetch(f, { cache: 'reload' }).catch(function () {});
+      })).then(demarrer, demarrer);
+    })();
+  </script>
+</body>
+</html>

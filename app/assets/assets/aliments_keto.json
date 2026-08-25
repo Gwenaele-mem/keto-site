@@ -1,0 +1,995 @@
+[
+ {
+  "nom": "Agneau",
+  "kcal": 250,
+  "glucides": 0,
+  "proteines": 25,
+  "lipides": 17
+ },
+ {
+  "nom": "Ail",
+  "kcal": 130,
+  "glucides": 28,
+  "proteines": 6,
+  "lipides": 0.5
+ },
+ {
+  "nom": "Allulose",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0,
+  "note": "Sucre rare non métabolisé : compté à 0, comme sur l'étiquette. Aucun effet sur la glycémie."
+ },
+ {
+  "nom": "Amande",
+  "kcal": 579,
+  "glucides": 9,
+  "proteines": 21,
+  "lipides": 50
+ },
+ {
+  "nom": "Asperge",
+  "kcal": 22,
+  "glucides": 2,
+  "proteines": 2.2,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Aubergine",
+  "kcal": 25,
+  "glucides": 3.5,
+  "proteines": 1,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Avocat",
+  "kcal": 160,
+  "glucides": 1.8,
+  "proteines": 2,
+  "lipides": 14.7
+ },
+ {
+  "nom": "Bacon",
+  "kcal": 540,
+  "glucides": 1.4,
+  "proteines": 37,
+  "lipides": 42
+ },
+ {
+  "nom": "Beurre",
+  "kcal": 750,
+  "glucides": 0.6,
+  "proteines": 0.9,
+  "lipides": 83
+ },
+ {
+  "nom": "Beurre d'amande",
+  "kcal": 615,
+  "glucides": 7,
+  "proteines": 21,
+  "lipides": 55
+ },
+ {
+  "nom": "Beurre de cacahuète",
+  "kcal": 600,
+  "glucides": 8,
+  "proteines": 25,
+  "lipides": 50
+ },
+ {
+  "nom": "Blanc d'œuf",
+  "kcal": 48,
+  "glucides": 0.7,
+  "proteines": 10.8,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Bœuf haché",
+  "kcal": 250,
+  "glucides": 0,
+  "proteines": 19,
+  "lipides": 19
+ },
+ {
+  "nom": "Bouillon de volaille",
+  "kcal": 5,
+  "glucides": 0.5,
+  "proteines": 0.5,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Brocoli",
+  "kcal": 34,
+  "glucides": 4,
+  "proteines": 2.8,
+  "lipides": 0.4
+ },
+ {
+  "nom": "Burrata",
+  "kcal": 290,
+  "glucides": 2,
+  "proteines": 13,
+  "lipides": 25
+ },
+ {
+  "nom": "Cabillaud",
+  "kcal": 80,
+  "glucides": 0,
+  "proteines": 18,
+  "lipides": 0.7
+ },
+ {
+  "nom": "Cacao non sucré",
+  "kcal": 228,
+  "glucides": 11,
+  "proteines": 20,
+  "lipides": 14
+ },
+ {
+  "nom": "Café",
+  "kcal": 2,
+  "glucides": 0,
+  "proteines": 0.3,
+  "lipides": 0
+ },
+ {
+  "nom": "Calamar",
+  "kcal": 90,
+  "glucides": 1,
+  "proteines": 16,
+  "lipides": 1.5
+ },
+ {
+  "nom": "Camembert",
+  "kcal": 300,
+  "glucides": 0.5,
+  "proteines": 20,
+  "lipides": 24
+ },
+ {
+  "nom": "Canard",
+  "kcal": 200,
+  "glucides": 0,
+  "proteines": 20,
+  "lipides": 13
+ },
+ {
+  "nom": "Cannelle",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Céleri",
+  "kcal": 16,
+  "glucides": 1.5,
+  "proteines": 0.7,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Champignon",
+  "kcal": 22,
+  "glucides": 1,
+  "proteines": 3,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Cheddar",
+  "kcal": 410,
+  "glucides": 1.3,
+  "proteines": 25,
+  "lipides": 33
+ },
+ {
+  "nom": "Chèvre frais",
+  "kcal": 270,
+  "glucides": 3,
+  "proteines": 18,
+  "lipides": 21
+ },
+ {
+  "nom": "Chocolat noir 90 %",
+  "kcal": 600,
+  "glucides": 14,
+  "proteines": 10,
+  "lipides": 55
+ },
+ {
+  "nom": "Chorizo",
+  "kcal": 450,
+  "glucides": 2,
+  "proteines": 24,
+  "lipides": 38
+ },
+ {
+  "nom": "Chou",
+  "kcal": 25,
+  "glucides": 3,
+  "proteines": 1.3,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Chou de Bruxelles",
+  "kcal": 43,
+  "glucides": 4,
+  "proteines": 3.4,
+  "lipides": 0.5
+ },
+ {
+  "nom": "Chou fleur",
+  "kcal": 30,
+  "glucides": 3,
+  "proteines": 2.4,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Chou kale",
+  "kcal": 35,
+  "glucides": 2,
+  "proteines": 3.3,
+  "lipides": 0.9
+ },
+ {
+  "nom": "Colin",
+  "kcal": 80,
+  "glucides": 0,
+  "proteines": 17,
+  "lipides": 1
+ },
+ {
+  "nom": "Comté",
+  "kcal": 410,
+  "glucides": 0,
+  "proteines": 28,
+  "lipides": 34
+ },
+ {
+  "nom": "Concentré de tomate",
+  "kcal": 80,
+  "glucides": 12,
+  "proteines": 4,
+  "lipides": 0.5
+ },
+ {
+  "nom": "Concombre",
+  "kcal": 12,
+  "glucides": 1.8,
+  "proteines": 0.6,
+  "lipides": 0.1
+ },
+ {
+  "nom": "Cornichon",
+  "kcal": 12,
+  "glucides": 1.5,
+  "proteines": 0.7,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Cornichon aigre-doux",
+  "kcal": 12,
+  "glucides": 1.5,
+  "proteines": 0.7,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Coulis de tomate",
+  "kcal": 30,
+  "glucides": 5,
+  "proteines": 1.5,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Courge spaghetti",
+  "kcal": 27,
+  "glucides": 5,
+  "proteines": 0.6,
+  "lipides": 0.5
+ },
+ {
+  "nom": "Courgette",
+  "kcal": 17,
+  "glucides": 2,
+  "proteines": 1.2,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Crabe",
+  "kcal": 90,
+  "glucides": 0,
+  "proteines": 19,
+  "lipides": 1
+ },
+ {
+  "nom": "Cream cheese",
+  "kcal": 350,
+  "glucides": 4,
+  "proteines": 6,
+  "lipides": 34
+ },
+ {
+  "nom": "Crème de coco",
+  "kcal": 330,
+  "glucides": 3,
+  "proteines": 3,
+  "lipides": 34
+ },
+ {
+  "nom": "Crème entière",
+  "kcal": 340,
+  "glucides": 3,
+  "proteines": 2.5,
+  "lipides": 36
+ },
+ {
+  "nom": "Crème fraîche épaisse",
+  "kcal": 300,
+  "glucides": 3,
+  "proteines": 2.3,
+  "lipides": 30
+ },
+ {
+  "nom": "Crevette",
+  "kcal": 90,
+  "glucides": 0,
+  "proteines": 20,
+  "lipides": 1
+ },
+ {
+  "nom": "Cuisse de poulet",
+  "kcal": 180,
+  "glucides": 0,
+  "proteines": 19,
+  "lipides": 11
+ },
+ {
+  "nom": "Dinde",
+  "kcal": 110,
+  "glucides": 0,
+  "proteines": 24,
+  "lipides": 1.5
+ },
+ {
+  "nom": "Eau",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Échalote",
+  "kcal": 50,
+  "glucides": 9,
+  "proteines": 1.5,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Emmental",
+  "kcal": 380,
+  "glucides": 0,
+  "proteines": 29,
+  "lipides": 28
+ },
+ {
+  "nom": "Entrecote",
+  "kcal": 270,
+  "glucides": 0,
+  "proteines": 25,
+  "lipides": 19
+ },
+ {
+  "nom": "Épices",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Épinard",
+  "kcal": 23,
+  "glucides": 1.4,
+  "proteines": 2.9,
+  "lipides": 0.4
+ },
+ {
+  "nom": "Érythritol",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0,
+  "note": "Polyol non métabolisé : 0 kcal, indice glycémique 0."
+ },
+ {
+  "nom": "Extrait de vanille",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Farine d'amande",
+  "kcal": 600,
+  "glucides": 7,
+  "proteines": 21,
+  "lipides": 50
+ },
+ {
+  "nom": "Farine de coco",
+  "kcal": 400,
+  "glucides": 20,
+  "proteines": 18,
+  "lipides": 14
+ },
+ {
+  "nom": "Farine de lin",
+  "kcal": 534,
+  "glucides": 1.6,
+  "proteines": 18,
+  "lipides": 42
+ },
+ {
+  "nom": "Fenouil",
+  "kcal": 25,
+  "glucides": 3,
+  "proteines": 1.2,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Feta",
+  "kcal": 260,
+  "glucides": 1,
+  "proteines": 14,
+  "lipides": 21
+ },
+ {
+  "nom": "Fibre de bambou",
+  "kcal": 8,
+  "glucides": 0,
+  "proteines": 0.5,
+  "lipides": 0.3,
+  "note": "Fibre pure : sert à la tenue des pâtes, quasi 0 kcal."
+ },
+ {
+  "nom": "Foie de volaille",
+  "kcal": 130,
+  "glucides": 1,
+  "proteines": 20,
+  "lipides": 5
+ },
+ {
+  "nom": "Ghee",
+  "kcal": 900,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 99.8
+ },
+ {
+  "nom": "Gluten de blé (vital wheat gluten)",
+  "kcal": 370,
+  "glucides": 14,
+  "proteines": 75,
+  "lipides": 1.9,
+  "note": "Base des pâtes keto qui lèvent (pizza, brioche, buns)."
+ },
+ {
+  "nom": "Graine de chanvre",
+  "kcal": 550,
+  "glucides": 3,
+  "proteines": 31,
+  "lipides": 49
+ },
+ {
+  "nom": "Graine de chia",
+  "kcal": 486,
+  "glucides": 8,
+  "proteines": 17,
+  "lipides": 31
+ },
+ {
+  "nom": "Graine de courge",
+  "kcal": 560,
+  "glucides": 5,
+  "proteines": 30,
+  "lipides": 45
+ },
+ {
+  "nom": "Graine de lin",
+  "kcal": 534,
+  "glucides": 1.6,
+  "proteines": 18,
+  "lipides": 42
+ },
+ {
+  "nom": "Graine de sésame",
+  "kcal": 580,
+  "glucides": 10,
+  "proteines": 18,
+  "lipides": 50
+ },
+ {
+  "nom": "Graine de tournesol",
+  "kcal": 580,
+  "glucides": 11,
+  "proteines": 21,
+  "lipides": 51
+ },
+ {
+  "nom": "Gruyère",
+  "kcal": 410,
+  "glucides": 0,
+  "proteines": 30,
+  "lipides": 33
+ },
+ {
+  "nom": "Halloumi",
+  "kcal": 320,
+  "glucides": 2,
+  "proteines": 22,
+  "lipides": 25
+ },
+ {
+  "nom": "Hareng",
+  "kcal": 210,
+  "glucides": 0,
+  "proteines": 18,
+  "lipides": 15
+ },
+ {
+  "nom": "Haricot vert",
+  "kcal": 31,
+  "glucides": 3.5,
+  "proteines": 1.8,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Herbes fraîches",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Huile d'olive",
+  "kcal": 900,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 100
+ },
+ {
+  "nom": "Huile de coco",
+  "kcal": 900,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 100
+ },
+ {
+  "nom": "Jambon blanc",
+  "kcal": 120,
+  "glucides": 1,
+  "proteines": 18,
+  "lipides": 4
+ },
+ {
+  "nom": "Jambon cru",
+  "kcal": 240,
+  "glucides": 1,
+  "proteines": 27,
+  "lipides": 14
+ },
+ {
+  "nom": "Jaune d'œuf",
+  "kcal": 322,
+  "glucides": 0.6,
+  "proteines": 16,
+  "lipides": 27
+ },
+ {
+  "nom": "Jus de citron",
+  "kcal": 22,
+  "glucides": 6,
+  "proteines": 0.4,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Jus de citron vert",
+  "kcal": 25,
+  "glucides": 8,
+  "proteines": 0.5,
+  "lipides": 0.1
+ },
+ {
+  "nom": "Konjac",
+  "kcal": 10,
+  "glucides": 1,
+  "proteines": 0.2,
+  "lipides": 0
+ },
+ {
+  "nom": "Lait d'amande non sucré",
+  "kcal": 15,
+  "glucides": 0.3,
+  "proteines": 0.5,
+  "lipides": 1.2
+ },
+ {
+  "nom": "Lait de coco",
+  "kcal": 190,
+  "glucides": 3,
+  "proteines": 2,
+  "lipides": 19
+ },
+ {
+  "nom": "Lait de soja sans sucre",
+  "kcal": 33,
+  "glucides": 1,
+  "proteines": 3.3,
+  "lipides": 1.8
+ },
+ {
+  "nom": "Lardons",
+  "kcal": 300,
+  "glucides": 0.5,
+  "proteines": 15,
+  "lipides": 27
+ },
+ {
+  "nom": "Levure chimique",
+  "kcal": 100,
+  "glucides": 28,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Levure de boulanger",
+  "kcal": 105,
+  "glucides": 3,
+  "proteines": 18,
+  "lipides": 1
+ },
+ {
+  "nom": "Maquereau",
+  "kcal": 200,
+  "glucides": 0,
+  "proteines": 19,
+  "lipides": 14
+ },
+ {
+  "nom": "Mascarpone",
+  "kcal": 412,
+  "glucides": 4,
+  "proteines": 4.5,
+  "lipides": 42
+ },
+ {
+  "nom": "Mayonnaise",
+  "kcal": 680,
+  "glucides": 1.5,
+  "proteines": 1,
+  "lipides": 75
+ },
+ {
+  "nom": "Moules",
+  "kcal": 85,
+  "glucides": 3,
+  "proteines": 12,
+  "lipides": 2
+ },
+ {
+  "nom": "Moutarde",
+  "kcal": 100,
+  "glucides": 5,
+  "proteines": 6,
+  "lipides": 4
+ },
+ {
+  "nom": "Mozzarella",
+  "kcal": 280,
+  "glucides": 1,
+  "proteines": 19,
+  "lipides": 22
+ },
+ {
+  "nom": "Noisette",
+  "kcal": 628,
+  "glucides": 7,
+  "proteines": 15,
+  "lipides": 61
+ },
+ {
+  "nom": "Noix",
+  "kcal": 650,
+  "glucides": 4,
+  "proteines": 15,
+  "lipides": 65
+ },
+ {
+  "nom": "Noix de coco râpée",
+  "kcal": 650,
+  "glucides": 7,
+  "proteines": 7,
+  "lipides": 65
+ },
+ {
+  "nom": "Noix de macadamia",
+  "kcal": 718,
+  "glucides": 5,
+  "proteines": 8,
+  "lipides": 76
+ },
+ {
+  "nom": "Noix de pécan",
+  "kcal": 690,
+  "glucides": 4,
+  "proteines": 9,
+  "lipides": 72
+ },
+ {
+  "nom": "Noix de Saint-Jacques",
+  "kcal": 85,
+  "glucides": 2,
+  "proteines": 17,
+  "lipides": 0.8
+ },
+ {
+  "nom": "Œuf",
+  "kcal": 143,
+  "glucides": 0.7,
+  "proteines": 12.6,
+  "lipides": 9.8
+ },
+ {
+  "nom": "Oignon",
+  "kcal": 40,
+  "glucides": 7,
+  "proteines": 1.2,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Olive",
+  "kcal": 150,
+  "glucides": 1,
+  "proteines": 1,
+  "lipides": 15
+ },
+ {
+  "nom": "Parmesan",
+  "kcal": 400,
+  "glucides": 0,
+  "proteines": 36,
+  "lipides": 28
+ },
+ {
+  "nom": "Pepperoni",
+  "kcal": 490,
+  "glucides": 1.5,
+  "proteines": 20,
+  "lipides": 44
+ },
+ {
+  "nom": "Pignon de pin",
+  "kcal": 670,
+  "glucides": 4,
+  "proteines": 14,
+  "lipides": 68
+ },
+ {
+  "nom": "Poireau",
+  "kcal": 30,
+  "glucides": 3.5,
+  "proteines": 1.5,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Poivre",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Poivron",
+  "kcal": 30,
+  "glucides": 4.6,
+  "proteines": 1,
+  "lipides": 0.3
+ },
+ {
+  "nom": "Porc",
+  "kcal": 240,
+  "glucides": 0,
+  "proteines": 23,
+  "lipides": 16
+ },
+ {
+  "nom": "Poudre de psyllium",
+  "kcal": 200,
+  "glucides": 3,
+  "proteines": 2,
+  "lipides": 0.6
+ },
+ {
+  "nom": "Poulet",
+  "kcal": 121,
+  "glucides": 0,
+  "proteines": 23,
+  "lipides": 2.5
+ },
+ {
+  "nom": "Protéine en poudre",
+  "kcal": 380,
+  "glucides": 8,
+  "proteines": 75,
+  "lipides": 6
+ },
+ {
+  "nom": "Radis",
+  "kcal": 16,
+  "glucides": 2,
+  "proteines": 0.7,
+  "lipides": 0.1
+ },
+ {
+  "nom": "Ricotta",
+  "kcal": 160,
+  "glucides": 3,
+  "proteines": 11,
+  "lipides": 11
+ },
+ {
+  "nom": "Roquefort",
+  "kcal": 350,
+  "glucides": 2,
+  "proteines": 19,
+  "lipides": 29
+ },
+ {
+  "nom": "Roquette",
+  "kcal": 25,
+  "glucides": 2,
+  "proteines": 2.6,
+  "lipides": 0.7
+ },
+ {
+  "nom": "Salade verte",
+  "kcal": 15,
+  "glucides": 1.5,
+  "proteines": 1.2,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Sardine",
+  "kcal": 200,
+  "glucides": 0,
+  "proteines": 25,
+  "lipides": 11
+ },
+ {
+  "nom": "Sauce soja",
+  "kcal": 60,
+  "glucides": 5,
+  "proteines": 6,
+  "lipides": 0
+ },
+ {
+  "nom": "Saucisse",
+  "kcal": 300,
+  "glucides": 1.5,
+  "proteines": 14,
+  "lipides": 27
+ },
+ {
+  "nom": "Saumon",
+  "kcal": 208,
+  "glucides": 0,
+  "proteines": 20,
+  "lipides": 13
+ },
+ {
+  "nom": "Saumon fumé",
+  "kcal": 180,
+  "glucides": 0.5,
+  "proteines": 22,
+  "lipides": 10
+ },
+ {
+  "nom": "Sel",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Skyr",
+  "kcal": 63,
+  "glucides": 4,
+  "proteines": 11,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Steak de bœuf",
+  "kcal": 250,
+  "glucides": 0,
+  "proteines": 26,
+  "lipides": 16
+ },
+ {
+  "nom": "Stévia",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0,
+  "note": "Édulcorant intense : quantités négligeables, compté à 0."
+ },
+ {
+  "nom": "Sucralose",
+  "kcal": 0,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0,
+  "note": "Édulcorant intense : quantités négligeables, compté à 0."
+ },
+ {
+  "nom": "Tamari",
+  "kcal": 60,
+  "glucides": 5,
+  "proteines": 9,
+  "lipides": 0
+ },
+ {
+  "nom": "Thé",
+  "kcal": 1,
+  "glucides": 0,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Thon",
+  "kcal": 130,
+  "glucides": 0,
+  "proteines": 26,
+  "lipides": 3
+ },
+ {
+  "nom": "Tomate",
+  "kcal": 18,
+  "glucides": 2.8,
+  "proteines": 0.9,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Tomate cerise",
+  "kcal": 20,
+  "glucides": 3,
+  "proteines": 0.9,
+  "lipides": 0.2
+ },
+ {
+  "nom": "Truite",
+  "kcal": 140,
+  "glucides": 0,
+  "proteines": 20,
+  "lipides": 6
+ },
+ {
+  "nom": "Veau",
+  "kcal": 170,
+  "glucides": 0,
+  "proteines": 24,
+  "lipides": 8
+ },
+ {
+  "nom": "Vinaigre de cidre",
+  "kcal": 21,
+  "glucides": 0.9,
+  "proteines": 0,
+  "lipides": 0
+ },
+ {
+  "nom": "Yaourt grec entier",
+  "kcal": 110,
+  "glucides": 4,
+  "proteines": 6,
+  "lipides": 8
+ }
+]
