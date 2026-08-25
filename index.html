@@ -96,6 +96,14 @@
   footer .inner { max-width: 1060px; margin: 0 auto; padding: 26px 22px; display: flex; gap: 24px; flex-wrap: wrap; justify-content: space-between; font-size: 12.5px; }
   footer a { color: #E8F2E9; text-decoration: none; display: block; margin-bottom: 6px; }
   footer .col b { display: block; color: #fff; margin-bottom: 8px; font-size: 13px; }
+
+  /* Carrousel des captures */
+  .car-wrap { position: relative; max-width: 1060px; margin: 0 auto; }
+  .carrousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 14px; scrollbar-width: thin; }
+  .carrousel img { width: 240px; height: auto; border-radius: 18px; border: 1px solid #E3D9B8; scroll-snap-align: center; flex-shrink: 0; box-shadow: 0 8px 20px rgba(60,52,30,.10); }
+  .car-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: none; background: #2E7D4F; color: #fff; font-size: 19px; cursor: pointer; box-shadow: 0 4px 12px rgba(27,84,53,.3); z-index: 2; }
+  .car-btn.prev { left: -6px; } .car-btn.next { right: -6px; }
+  @media (max-width: 700px) { .car-btn { display: none; } }
 </style>
 
 <header>
@@ -144,6 +152,32 @@
       <p>Partage de recettes, forum d'entraide, boîte à idées. Une appli qui évolue avec ses membres.</p></div>
   </div>
 </div>
+
+<div class="section" id="captures">
+  <h2>L'appli en images</h2>
+  <div class="car-wrap">
+    <button class="car-btn prev" aria-label="Précédent" onclick="defiler(-1)">&#8249;</button>
+    <div class="carrousel" id="carrousel">
+      <img src="visuels/01_journal.jpg" alt="Le journal : bien plus qu'un compteur de calories" loading="lazy">
+      <img src="visuels/02_menus_semaine.jpg" alt="Menus adaptés, quotidien facilité" loading="lazy">
+      <img src="visuels/03_menus_jour.jpg" alt="Des repas équilibrés générés selon tes goûts" loading="lazy">
+      <img src="visuels/04_liste_courses.jpg" alt="La liste de courses générée automatiquement" loading="lazy">
+      <img src="visuels/05_recettes.jpg" alt="1 200 recettes kéto et low carb" loading="lazy">
+      <img src="visuels/06_progression.jpg" alt="Suis tes progrès jour après jour" loading="lazy">
+      <img src="visuels/07_tableau_de_bord.jpg" alt="Tout ton suivi, imprimable en PDF" loading="lazy">
+      <img src="visuels/08_cetonemie.jpg" alt="Suis ta cétonémie et ta glycémie" loading="lazy">
+      <img src="visuels/09_communaute.jpg" alt="Échange avec la communauté" loading="lazy">
+    </div>
+    <button class="car-btn next" aria-label="Suivant" onclick="defiler(1)">&#8250;</button>
+  </div>
+</div>
+
+<script>
+function defiler(sens) {
+  var c = document.getElementById('carrousel');
+  c.scrollBy({ left: sens * 272, behavior: 'smooth' });
+}
+</script>
 
 <div class="confiance" id="confiance">
   <div class="inner">
