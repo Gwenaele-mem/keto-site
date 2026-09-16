@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>My Keto Assistant — Nouveau mot de passe</title>
+<style>
+:root{--fond:#FDF8E7;--texte:#2E2A1F;--vert:#2E7D4F;--encart:#E8F2E9;--erreur:#B3402F;--bord:#D9CFA8;}
+body{font-family:Georgia,serif;background:var(--fond);color:var(--texte);margin:0;padding:24px 16px;line-height:1.55;}
+main{max-width:460px;margin:0 auto;}
+h1{font-size:1.45em;margin:.2em 0 .6em;text-wrap:balance;}
+p{font-size:.95em;margin:.3em 0 .9em;}
+.en{color:#5B5645;font-size:.85em;}
+label{display:block;font-size:.9em;margin:14px 0 4px;}
+input{width:100%;box-sizing:border-box;font:inherit;padding:10px 12px;border:1px solid var(--bord);border-radius:10px;background:#FFFDF6;}
+input:focus-visible,button:focus-visible{outline:3px solid var(--vert);outline-offset:2px;}
+button{margin-top:18px;width:100%;font:inherit;font-weight:bold;padding:12px;border:0;border-radius:12px;background:var(--vert);color:#fff;cursor:pointer;}
+button[disabled]{opacity:.6;cursor:default;}
+.message{margin-top:16px;padding:10px 14px;border-radius:10px;font-size:.92em;}
+.ok{background:var(--encart);color:#2E5B3F;}
+.ko{background:#F6E1DC;color:var(--erreur);}
+</style></head><body><main>
+<h1>Choisir un nouveau mot de passe</h1>
+<p>Vous avez demandé à changer le mot de passe de votre compte My Keto Assistant.</p>
+<p class="en">Choose a new password for your My Keto Assistant account.</p>
+
+<form id="formulaire" novalidate>
+  <label for="mdp">Nouveau mot de passe (6 caractères minimum) · <span lang="en">New password</span></label>
+  <input id="mdp" type="password" autocomplete="new-password" minlength="6" required>
+  <label for="confirmation">Confirmez-le · <span lang="en">Confirm it</span></label>
+  <input id="confirmation" type="password" autocomplete="new-password" minlength="6" required>
+  <button id="valider" type="submit">Enregistrer · <span lang="en">Save</span></button>
+</form>
+<div id="message" class="message" role="status" hidden></div>
+
+<script>
+// Page relais pour « mot de passe oublié » (partie B du plan de conformité,
+// 16/09/2026). L'e-mail de Supabase contient un code à saisir dans l'appli et,
+// pour les versions qui ne savent pas encore le saisir, un lien vers cette page.
+// Le jeton n'est vérifié qu'au clic sur « Enregistrer » : un robot anti-spam
+// qui ouvre le lien ne peut pas le consommer. Aucun script tiers.
+(function () {
+  var URL_SUPABASE = 'https://xyttoacrddyppvbyqghc.supabase.co';
+  var CLE_PUBLIQUE = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh5dHRvYWNyZGR5cHB2YnlxZ2hjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzNjM0MzgsImV4cCI6MjA5NjkzOTQzOH0.OEG7d8Z8Al_ivknyZt6CnEROUbfpN8Y3DL_dw7V5tV4';
+  var params = new URLSearchParams(window.location.search);
+  var jeton = params.get('token_hash');
+  var type = params.get('type') || 'recovery';
+  var formulaire = document.getElementById('formulaire');
+  var message = document.getElementById('message');
+  var bouton = document.getElementById('valider');
+
+  function dire(texte, ok) {
+    message.hidden = false;
+    message.className = 'message ' + (ok ? 'ok' : 'ko');
+    message.textContent = texte;
+  }
+
+  if (!jeton || type !== 'recovery') {
+    formulaire.hidden = true;
+    dire("Ce lien est incomplet. Redemandez un code depuis l'application (Se connecter → Mot de passe oublié). — This link is incomplete: ask for a new code in the app.", false);
+    return;
+  }
+
+  formulaire.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var mdp = document.getElementById('mdp').value;
+    var confirmation = document.getElementById('confirmation').value;
+    if (mdp.length < 6) { dire('6 caractères minimum. — At least 6 characters.', false); return; }
+    if (mdp !== confirmation) { dire('Les deux mots de passe ne sont pas identiques. — The passwords do not match.', false); return; }
+    bouton.disabled = true;
+    var entetes = { 'apikey': CLE_PUBLIQUE, 'Content-Type': 'application/json' };
+    fetch(URL_SUPABASE + '/auth/v1/verify', {
+      method: 'POST', headers: entetes,
+      body: JSON.stringify({ type: 'recovery', token_hash: jeton })
+    }).then(function (r) {
+      return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+    }).then(function (rep) {
+      if (!rep.ok || !rep.d.access_token) throw new Error('jeton');
+      return fetch(URL_SUPABASE + '/auth/v1/user', {
+        method: 'PUT',
+        headers: { 'apikey': CLE_PUBLIQUE, 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + rep.d.access_token },
+        body: JSON.stringify({ password: mdp })
+      }).then(function (r) {
+        if (!r.ok) throw new Error('mot de passe');
+        // La session ouverte par le lien ne sert qu'à ce changement : on la ferme.
+        fetch(URL_SUPABASE + '/auth/v1/logout', { method: 'POST', headers: { 'apikey': CLE_PUBLIQUE, 'Authorization': 'Bearer ' + rep.d.access_token } });
+      });
+    }).then(function () {
+      formulaire.hidden = true;
+      dire("Mot de passe changé. Vous pouvez vous connecter dans l'application. — Password changed: you can now sign in in the app.", true);
+    }).catch(function (err) {
+      bouton.disabled = false;
+      if (err && err.message === 'jeton') {
+        formulaire.hidden = true;
+        dire("Ce lien a expiré ou a déjà servi. Redemandez un code depuis l'application. — This link has expired or was already used: ask for a new code in the app.", false);
+      } else {
+        dire("Le changement n'a pas abouti. Vérifiez votre connexion puis réessayez. — The change failed: check your connection and try again.", false);
+      }
+    });
+  });
+})();
+</script>
+</main></body></html>
