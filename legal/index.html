@@ -19,15 +19,18 @@ nav a{color:#2E7D4F;margin-right:16px;}
 <p>Les données personnelles traitées par l'application My Keto Assistant le sont sous la responsabilité de Gwenaële DOMECQ, entrepreneure individuelle sous le nom commercial « NovAction Accompagnement » (voir Mentions légales).
 Contact pour toute question ou demande relative à vos données : contact@keto-assistant.eu.</p>
 <h3>2. Sécurité et chiffrement</h3>
-<p>Toutes les communications entre l'Application et nos serveurs sont chiffrées (HTTPS). Votre mot de passe est haché avec l'algorithme bcrypt par notre prestataire d'authentification : personne — pas même nous — ne peut le lire. Chaque compte n'accède qu'à ses propres données (règles de sécurité appliquées ligne par ligne en base).</p>
+<p>Toutes les communications entre l'Application et nos serveurs sont chiffrées (HTTPS), et notre hébergeur chiffre les données stockées. Votre mot de passe est haché avec l'algorithme bcrypt par notre prestataire d'authentification : personne — pas même nous — ne peut le lire. Chaque compte n'accède qu'à ses propres données (règles de sécurité appliquées ligne par ligne en base).
+Exception : la photo d'une recette que vous partagez avec la communauté est accessible à toute personne qui connaît son adresse. Elle est enregistrée sans ses métadonnées (position, appareil).</p>
 <h3>3. Données que nous collectons</h3>
-<p>• Compte : adresse e-mail et mot de passe (haché).
-• Profil : réponses de l'inscription — sexe, âge, taille, poids, objectif, niveau d'activité, régime choisi, préférences et exclusions alimentaires, contre-indications déclarées.
-• Journal : aliments consommés, eau, poids, mensurations, exercice, sommeil, jeûne, cétonémie si vous la saisissez.
-• Santé connectée, si vous l'activez : pas, calories actives, sommeil et poids lus dans le carnet de santé du téléphone.
-• Menus, recettes et aliments que vous créez ; suivi du coach (points hebdomadaires).
-• Option halal ou casher, si vous l'activez.
+<p>• Compte : adresse e-mail, mot de passe (haché) et pseudo.
+• Profil : sexe, âge, taille, poids de départ et poids cible, niveau d'activité, régime et options (sans gluten, sans lactose, végétarien, halal ou casher), goûts et habitudes de repas, objectifs de calories et de macronutriments.
+• Journal : aliments consommés, eau, poids, mensurations, sommeil et exercices que vous saisissez, cétonémie et glycémie si vous les saisissez, bilans du coach, menus.
+• Recettes et fiches d'aliments que vous créez (photos comprises) ; favoris, historique des aliments utilisés et repères sur les recettes, sauvegardés pour vous suivre d'un téléphone à l'autre.
+• Communauté : recettes partagées, messages du forum, suggestions et votes, signalements, membres que vous bloquez.
+• Abonnement : voir la section 6.
 • Preuve de vos accords : type d'accord, version du texte, date et heure.
+• Données techniques : date de dernière utilisation de l'Application, journaux de connexion de notre hébergeur (adresse IP, appareil), messages d'erreur liés à la vérification des achats.
+Les contre-indications que vous cochez à l'inscription servent uniquement à vous orienter vers un professionnel de santé : elles ne sont pas enregistrées. Restent uniquement sur votre téléphone : le suivi du jeûne et de la faim, les séances de respiration, les heures des repas, le frigo, la liste de courses, les notifications, la photo d'une étiquette nutritionnelle, et les pas, calories actives et sommeil lus dans le carnet de santé.
 Certaines de ces données sont des données de santé : nous ne les traitons que pour rendre le service (calcul de votre plan, suivi, personnalisation des menus) — jamais à d'autres fins.</p>
 <h3>4. Bases légales</h3>
 <p>Le traitement repose sur :
@@ -35,33 +38,54 @@ Certaines de ces données sont des données de santé : nous ne les traitons que
 • un consentement distinct pour l'option halal ou casher, qui peut révéler une conviction religieuse ;
 • votre consentement pour les options facultatives : santé connectée (Apple Santé / Health Connect) et dictée vocale ;
 • l'exécution du contrat pour le compte, les abonnements et le service ;
-• notre intérêt légitime pour la sécurité du service.
+• notre intérêt légitime pour la sécurité du service et la modération de la communauté (journaux, signalements, blocages) ;
+• nos obligations légales, notamment comptables.
 Vous pouvez retirer un consentement à tout moment (Profil → Compte → Mes consentements), sans remettre en cause le traitement effectué avant ce retrait. Sans le consentement aux données de santé, le service ne peut pas fonctionner : le retirer entraîne la suppression du compte.</p>
-<h3>5. Où sont stockées vos données ?</h3>
-<p>Sur Supabase, avec un hébergement situé dans l'Union européenne (région AWS Paris, eu-west-3). Certains réglages de confort (favoris, historique de saisie, coches de la liste de courses, préférences d'affichage) restent stockés localement sur votre appareil.</p>
+<h3>5. Hébergement et transferts hors de l'Union européenne</h3>
+<p>Vos données sont hébergées par Supabase Pte. Ltd., société de droit singapourien (65 Chulia Street #38-02/03, OCBC Centre, Singapour 049513), sur des serveurs d'Amazon Web Services situés à Paris (région eu-west-3). Les fonctions serveur de l'Application (vérification des achats, suppression de compte, recherche de photos) y sont également exécutées.
+Vos données sont donc stockées dans l'Union européenne, mais elles peuvent être consultées ou traitées en partie depuis l'étranger : par Supabase Pte. Ltd. (Singapour), par Supabase, Inc. (États-Unis), qui assure le support technique, et par les sous-traitants de Supabase, notamment pour les journaux de connexion (adresse IP, appareil) et la diffusion des photos partagées, mises en cache sur un réseau mondial. Singapour ne bénéficie pas d'une décision d'adéquation de la Commission européenne : ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne (décision 2021/914), intégrées au contrat de sous-traitance de Supabase. Vous pouvez en obtenir une copie à contact@keto-assistant.eu.
+Comme pour tout prestataire soumis à une loi étrangère, un accès des autorités de ces pays à vos données ne peut pas être totalement exclu.</p>
 <h3>6. Paiements</h3>
-<p>Les abonnements sont encaissés par l'App Store d'Apple ou Google Play : aucune donnée bancaire ne transite par nos serveurs ni n'y est stockée. Les plateformes nous transmettent uniquement le statut de l'abonnement (actif, expiré, résilié) nécessaire à l'activation de vos fonctionnalités.</p>
+<p>Les abonnements sont vendus et encaissés par l'App Store d'Apple ou Google Play, selon ses propres conditions et sa politique de confidentialité : aucune donnée bancaire ne nous est transmise. Pour activer vos fonctionnalités, notre serveur vérifie l'achat auprès de la boutique et conserve le produit, la date d'expiration, l'identifiant de transaction et le jeton d'achat. Selon la boutique, ce jeton contient aussi le pays de la boutique, le prix et la devise.</p>
 <h3>7. Santé connectée (optionnel)</h3>
-<p>Sur mobile, vous pouvez connecter l'Application au carnet de santé de votre téléphone (Apple Santé sur iPhone, Health Connect sur Android) pour importer automatiquement vos pas, calories actives, sommeil et poids (balance connectée). Les valeurs importées rejoignent votre journal. Cette connexion est optionnelle, en LECTURE seule, activée uniquement avec votre accord explicite via la fenêtre système, et révocable à tout moment (dans l'Application ou les réglages du téléphone). L'Application n'écrit rien dans votre carnet de santé.</p>
+<p>Sur mobile, vous pouvez connecter l'Application au carnet de santé de votre téléphone (Apple Santé sur iPhone, Health Connect sur Android) pour afficher automatiquement vos pas, calories actives, sommeil et poids (balance connectée). Ces valeurs restent sur votre téléphone ; seul le poids est enregistré dans votre journal, et seulement si vous validez la pesée proposée. Cette connexion est optionnelle, en LECTURE seule, activée uniquement avec votre accord explicite via la fenêtre système, et révocable à tout moment (dans l'Application ou les réglages du téléphone). L'Application n'écrit rien dans votre carnet de santé.</p>
 <h3>8. Dictée vocale (optionnel)</h3>
 <p>L'assistant vocal permet de remplir le journal en parlant. Pour transformer la voix en texte, il utilise la reconnaissance vocale du système de votre téléphone, qui peut transmettre l'enregistrement de votre voix à l'éditeur de ce système, selon ses propres conditions. L'Application ne reçoit que le texte obtenu, s'en sert pour remplir votre journal et ne conserve jamais l'enregistrement sonore. Le micro n'est actif que lorsque vous appuyez sur le bouton de dictée.
 Votre accord est demandé avant la première dictée, et peut être retiré à tout moment (Profil → Compte → Mes consentements).</p>
-<h3>9. Ce que nous ne faisons PAS</h3>
-<p>• Pas de revente ni de partage de vos données à des tiers.
-• Pas de publicité, pas de trackers publicitaires, pas d'outils d'analyse tiers.
+<h3>9. Destinataires et services tiers</h3>
+<p>Vos données ne sont communiquées qu'aux destinataires suivants, et seulement pour les usages indiqués :
+• Supabase Pte. Ltd. et ses sous-traitants : hébergement (section 5).
+• l'App Store d'Apple ou Google Play : vente des abonnements et vérification de vos achats (section 6).
+• L'éditeur du système de votre téléphone : reconnaissance vocale, si vous utilisez la dictée (section 8).
+• Google, via le module ML Kit intégré à l'Application pour lire les étiquettes nutritionnelles et, selon le téléphone, les codes-barres : l'image est analysée sur le téléphone et ne lui est pas envoyée, mais le module transmet à Google des statistiques techniques (modèle et système du téléphone, version de l'Application, identifiant d'installation, performances, erreurs).
+• Open Food Facts (association loi 1901, France) : quand vous scannez un code-barres absent de nos bases ou cherchez un produit de marque, le code-barres ou le texte recherché lui est envoyé directement depuis votre téléphone, avec votre adresse IP, sans identifiant de compte. Selon sa politique, Open Food Facts conserve ses journaux de visite 3 ans.
+• Pexels (marque de Canva Germany GmbH, Berlin) : les photos du catalogue de recettes sont chargées depuis ses serveurs, qui reçoivent l'adresse IP de votre téléphone. Pexels indique traiter des données hors de l'Union européenne, notamment aux États-Unis, avec des garanties de transfert. Les recherches de photos passent par notre serveur, sans aucune donnée vous concernant.
+• Les autres membres : votre pseudo et ce que vous choisissez de partager (recettes, messages, suggestions, fiches d'aliments).
+• Les autorités, uniquement sur demande prévue par la loi.</p>
+<h3>10. Ce que nous ne faisons PAS</h3>
+<p>• Pas de revente de vos données, ni de communication à d'autres destinataires que ceux de la section 9.
+• Pas de publicité, pas de traceurs publicitaires, pas d'outil de mesure d'audience. Seul le module ML Kit transmet à Google des statistiques techniques (section 9).
 • Pas d'intelligence artificielle générative : aucune de vos données n'est envoyée à un service d'IA générative. Seule la dictée vocale, si vous l'utilisez, passe par la reconnaissance vocale du téléphone (section 8).
 • Pas d'utilisation de vos données de santé à d'autres fins que le service.
 Les recettes que vous choisissez de partager avec la communauté sont visibles des autres membres, uniquement à votre initiative.
 Les fiches d'aliments que vous créez (nom, marque, code-barres, valeurs nutritionnelles) enrichissent la base commune et sont visibles des autres membres : ce sont des données de produit, jamais vos consommations ni votre identité. Elles ne portent pas la coche « valeurs vérifiées », réservée à la table officielle CIQUAL. Les fiches créées avant le 28 août 2026 restent privées. Vous seul pouvez modifier ou supprimer les vôtres.</p>
-<h3>10. Durée de conservation et suppression</h3>
-<p>Vos données sont conservées tant que votre compte existe, y compris la preuve de vos accords. La suppression du compte (Profil → Compte → Supprimer mon compte) efface vos données personnelles et votre compte de connexion. Vos contributions communautaires (recettes partagées, messages du forum) peuvent être conservées sous forme anonymisée. Les sauvegardes techniques sont purgées selon le cycle de notre hébergeur.</p>
-<h3>11. Vos droits (RGPD)</h3>
-<p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. L'Application intègre directement : l'export complet de vos données (Profil → Compte → Exporter mes données, format JSON), la consultation et le retrait de vos accords (Profil → Compte → Mes consentements) et la suppression du compte. Pour toute autre demande : contact@keto-assistant.eu — réponse sous 30 jours au plus. Vous pouvez également saisir la CNIL (cnil.fr).</p>
-<h3>12. Mineurs</h3>
+<h3>11. Durées de conservation et suppression</h3>
+<p>• Tant que vous utilisez l'Application, vos données sont conservées, y compris la preuve de vos accords.
+• Après 2 ans sans aucune utilisation, votre compte et vos données sont supprimés. Un e-mail vous prévient 30 jours avant : il suffit d'ouvrir l'Application pour garder votre compte.
+• Quand vous supprimez votre compte (Profil → Compte → Supprimer mon compte), nous effaçons immédiatement votre compte de connexion, vos données personnelles, la preuve de vos accords, vos fiches d'aliments et les photos de vos recettes partagées.
+• Vos messages du forum, vos suggestions et vos recettes partagées restent alors visibles sous la mention « Membre supprimé », sans pseudo, sans photo et sans lien avec votre compte. Leur texte reste tel que vous l'avez écrit : si vous voulez qu'il disparaisse aussi, retirez vos recettes partagées avant (menu de la fiche) et écrivez-nous pour vos messages et suggestions.
+• Messages d'erreur liés aux achats : 6 mois.
+• Journaux de connexion de notre hébergeur : conservés par Supabase selon ses propres règles (consultables 1 jour de notre côté).
+• Relevés financiers des boutiques, sans données de santé : 10 ans, au titre des obligations comptables de l'éditrice.
+• Sauvegardes : notre formule d'hébergement ne comprend pas de sauvegarde restaurable ; une donnée supprimée l'est donc définitivement de notre côté.
+• Données restées sur votre téléphone : jusqu'à ce que vous les effaciez ou désinstalliez l'Application.</p>
+<h3>12. Vos droits (RGPD)</h3>
+<p>Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, et du droit de retirer vos accords. L'Application intègre directement : l'export complet de vos données (Profil → Compte → Exporter mes données, format JSON), la consultation et le retrait de vos accords (Profil → Compte → Mes consentements) et la suppression du compte. Pour toute autre demande, dont une copie des clauses contractuelles types : contact@keto-assistant.eu — réponse sous 30 jours au plus. Vous pouvez également saisir la CNIL (cnil.fr).</p>
+<h3>13. Mineurs</h3>
 <p>L'Application est réservée aux personnes majeures (18 ans et plus) ; l'inscription refuse tout âge inférieur. Si nous découvrons que des données d'un mineur ont malgré tout été collectées, nous les supprimons sans délai. Parents : contact@keto-assistant.eu.</p>
-<h3>13. Avertissement santé</h3>
+<h3>14. Avertissement santé</h3>
 <p>My Keto Assistant est un outil de suivi nutritionnel, pas un dispositif médical. Les plans proposés ne remplacent pas un avis médical. Consultez un professionnel de santé avant de commencer un régime cétogène, en particulier en cas de pathologie ou de traitement.</p>
-<h3>14. Mise à jour de la présente politique</h3>
+<h3>15. Mise à jour de la présente politique</h3>
 <p>La version en vigueur est celle affichée dans l'Application (date en haut de page). En cas d'évolution substantielle — par exemple l'ajout d'un nouveau service connecté — vous en serez informé·e dans l'Application.</p>
 <h2 id="cgu">Conditions générales d'utilisation</h2>
 <h3>1. Objet et champ d'application</h3>
@@ -96,7 +120,7 @@ L'abonnement est reconduit automatiquement à chaque échéance, au même tarif,
 Pour tout contrat conclu directement avec l'éditrice, l'Utilisateur consommateur dispose d'un délai de rétractation de 14 jours à compter de la souscription, qu'il peut exercer par simple e-mail à contact@keto-assistant.eu en indiquant ses nom, adresse e-mail du compte et la date de souscription. Si l'Utilisateur demande expressément l'accès immédiat au contenu numérique, il reconnaît perdre son droit de rétractation une fois l'exécution commencée, conformément à l'article L221-28 du Code de la consommation.</p>
 <h3>11. Contenu utilisateur et communauté</h3>
 <p>Les recettes et aliments créés par l'Utilisateur restent les siens. En partageant une recette avec la communauté, l'Utilisateur autorise son affichage dans l'Application et sa copie par les autres membres. En créant une fiche d'aliment, il en autorise de même l'affichage et l'usage par les autres membres au sein de l'Application ; il en reste seul propriétaire et seul à pouvoir la modifier ou la supprimer. Les contributions au forum sont publiques au sein de l'Application.
-Sont interdits les contenus illicites, trompeurs, haineux, dangereux pour la santé ou constituant du démarchage. L'éditrice peut retirer tout contenu contraire et suspendre le compte de son auteur. Les contributions communautaires peuvent être conservées sous forme anonymisée après suppression du compte.</p>
+Sont interdits les contenus illicites, trompeurs, haineux, dangereux pour la santé ou constituant du démarchage. L'éditrice peut retirer tout contenu contraire et suspendre le compte de son auteur. Après la suppression du compte, les messages du forum, suggestions et recettes partagées restent visibles sous la mention « Membre supprimé », sans pseudo ni photo.</p>
 <h3>12. Propriété intellectuelle</h3>
 <p>L'Application, sa charte graphique, ses mascottes et ses contenus sont protégés. L'éditrice concède à l'Utilisateur un droit d'utilisation personnel, non exclusif et non cessible de l'Application. Toute décompilation, extraction massive de données ou réutilisation commerciale non autorisée est interdite, sous réserve des exceptions légales.</p>
 <h3>13. Évolution, interruption des services</h3>
@@ -121,7 +145,7 @@ N° de TVA intracommunautaire : FR85107412942</p>
 <h3>2. Directrice de la publication</h3>
 <p>Gwenaële DOMECQ, en qualité d'entrepreneure individuelle.</p>
 <h3>3. Hébergement</h3>
-<p>Les données de l'Application sont hébergées par Supabase (supabase.com), avec un stockage situé dans l'Union européenne (région AWS Paris, eu-west-3). L'Application est distribuée par l'App Store d'Apple ou Google Play, selon ses conditions propres.</p>
+<p>Les données de l'Application sont hébergées par Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapour 049513 (supabase.com), sur des serveurs d'Amazon Web Services situés à Paris (région eu-west-3). Voir la section « Hébergement et transferts » de la Politique de confidentialité. L'Application est distribuée par l'App Store d'Apple ou Google Play, selon ses conditions propres.</p>
 <h3>4. Propriété intellectuelle</h3>
 <p>Le nom « My Keto Assistant », les mascottes (le Beurre, le Camembert « Le Rigolo », le carré de sucre), les visuels, les textes et la structure de l'Application sont la propriété de l'éditrice. Toute reproduction non autorisée est interdite.
 Données nutritionnelles utilisées : table CIQUAL (ANSES, licence ouverte) et Open Food Facts (licence ODbL).</p>
