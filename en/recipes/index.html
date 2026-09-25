@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keto recipes with net carbs | My Keto Assistant</title>
+<meta name="description" content="Easy keto recipes with calories, protein, fat and net carbs per serving: mains, breakfasts, desserts and snacks.">
+<link rel="canonical" href="https://keto-assistant.eu/en/recipes/">
+<link rel="alternate" hreflang="fr" href="https://keto-assistant.eu/recettes/">
+<link rel="alternate" hreflang="en" href="https://keto-assistant.eu/en/recipes/">
+<link rel="alternate" hreflang="x-default" href="https://keto-assistant.eu/en/recipes/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:title" content="Keto recipes with net carbs">
+<meta property="og:description" content="Easy keto recipes with calories, protein, fat and net carbs per serving: mains, breakfasts, desserts and snacks.">
+<meta property="og:url" content="https://keto-assistant.eu/en/recipes/">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FDF8E7;color:#2E2A1F;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:#2E7D4F}
+header{max-width:1060px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:10px}
+header .logo{display:flex;align-items:center;gap:9px;font-family:Georgia,serif;font-size:20px;font-weight:700;color:#1B5435;text-decoration:none}
+header .logo img{width:30px;height:30px;border-radius:8px}
+header nav{margin-left:auto;display:flex;gap:16px;font-size:13.5px}
+header nav a{text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:6px 22px 40px}
+.fil{font-size:12.5px;color:#8A8464;margin:4px 0 14px}
+.fil a{color:#8A8464;text-decoration:none}
+h1{font-family:Georgia,serif;font-size:clamp(26px,4.2vw,38px);line-height:1.18;color:#1B5435;margin:0 0 10px;text-wrap:balance}
+.infos{font-size:14px;color:#5B5342;margin:0 0 20px}
+.photo{margin:0 0 22px}
+.photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;box-shadow:0 14px 30px rgba(60,52,30,.16)}
+.photo figcaption{font-size:11.5px;color:#8A8464;margin-top:6px;text-align:right}
+.macros{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 6px}
+.macro{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:14px;padding:12px 8px;text-align:center}
+.macro b{display:block;font-size:22px;color:#1B5435;font-variant-numeric:tabular-nums}
+.macro span{font-size:12px;color:#5B5342}
+.macro.nets{background:#E8F2E9;border-color:#CFE3D3}
+.sous-macros{font-size:12.5px;color:#8A8464;margin:0 0 22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.tag{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:999px;padding:4px 12px;font-size:12.5px;color:#5B5342}
+.tag.alerte{border-color:#F0D39A;color:#8A5A0A}
+.colonnes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:28px}
+h2{font-family:Georgia,serif;font-size:22px;color:#1B5435;margin:0 0 4px}
+.pour{font-size:13px;color:#8A8464;margin:0 0 12px}
+ul.ingr{list-style:none;padding:0;margin:0}
+ul.ingr li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #EFE6C8;font-size:15px}
+ul.ingr li span:last-child{color:#5B5342;white-space:nowrap;font-variant-numeric:tabular-nums}
+ol.etapes{padding-left:22px;margin:12px 0 0}
+ol.etapes li{margin:0 0 14px;font-size:15.5px;padding-left:4px}
+.cta{margin:34px 0 0;background:#1B5435;color:#E8F2E9;border-radius:20px;padding:24px}
+.cta h2{color:#fff;margin:0 0 8px}
+.cta p{margin:0 0 18px;max-width:60ch;font-size:15px}
+.stores{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:flex;align-items:center;gap:9px;background:#2E2A1F;color:#fff;border-radius:12px;padding:9px 16px;text-decoration:none;border:1px solid #4a4536}
+.badge .l1{font-size:9.5px;opacity:.8;display:block}
+.badge .l2{font-size:14.5px;font-weight:700;display:block}
+.badge:focus-visible,.fil a:focus-visible,header a:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+footer{background:#1B5435;color:#CBE0CE;margin-top:10px}
+footer .inner{max-width:1060px;margin:0 auto;padding:22px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px}
+footer a{color:#E8F2E9;text-decoration:none;display:block;margin-bottom:6px}
+header nav a{white-space:nowrap}
+@media (max-width:640px){
+  .macros{grid-template-columns:repeat(2,1fr)}
+  .colonnes{grid-template-columns:1fr}
+  header{padding:12px 16px}
+  header .logo{font-size:16px;gap:7px}
+  header .logo img{width:24px;height:24px}
+  header nav{gap:12px;font-size:12.5px}
+  main{padding:4px 16px 32px}
+}
+
+.intro{font-size:16px;color:#5B5342;max-width:65ch;margin:0 0 26px}
+section{margin:0 0 30px}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:12px}
+.carte{display:flex;flex-direction:column;background:#FFFDF4;border:1px solid #EFE6C8;border-radius:16px;overflow:hidden;text-decoration:none;color:#2E2A1F;transition:transform .15s,box-shadow .15s}
+.carte:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(60,52,30,.12)}
+.carte:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+.carte img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+.carte .nom{font-weight:600;font-size:15px;padding:10px 12px 2px;line-height:1.3}
+.carte .chiffres{font-size:12.5px;color:#2E7D4F;padding:0 12px 12px}
+@media (prefers-reduced-motion:reduce){.carte{transition:none}}
+main{max-width:1060px}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/"><img src="/favicon.png" alt="">My Keto Assistant</a>
+  <nav><a href="/en/recipes/">Keto recipes</a><a href="https://keto-assistant.eu/recettes/" hreflang="fr">Français</a></nav>
+</header>
+<main>
+  <div class="fil"><a href="/">Home</a> › Keto recipes</div>
+  <h1>Keto recipes with net carbs</h1>
+  <p class="intro">Everyday ketogenic recipes, each with calories, protein, fat and, above all, <b>net carbs</b> per serving. They all come from the My Keto Assistant app, which builds them into your weekly meal plan and writes your shopping list.</p>
+  <section><h2>Main dishes</h2><div class="grille"><a class="carte" href="/en/recipes/roasted-asparagus-with-smoked-bacon-and-hazelnuts/"><img src="https://images.pexels.com/photos/4051007/pexels-photo-4051007.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Roasted asparagus with smoked bacon and hazelnuts" loading="lazy" width="600" height="400"><span class="nom">Roasted asparagus with smoked bacon and hazelnuts</span><span class="chiffres">438 kcal · 5.1 g net carbs</span></a><a class="carte" href="/en/recipes/zucchini-lasagna-with-beef-and-mozzarella/"><img src="https://images.pexels.com/photos/28908099/pexels-photo-28908099.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Zucchini lasagna with beef and mozzarella" loading="lazy" width="600" height="400"><span class="nom">Zucchini lasagna with beef and mozzarella</span><span class="chiffres">300 kcal · 2.6 g net carbs</span></a><a class="carte" href="/en/recipes/cobb-salad-with-chicken-roquefort-and-egg/"><img src="https://images.pexels.com/photos/34596747/pexels-photo-34596747.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Cobb salad with chicken, roquefort and egg" loading="lazy" width="600" height="400"><span class="nom">Cobb salad with chicken, roquefort and egg</span><span class="chiffres">446 kcal · 2.8 g net carbs</span></a><a class="carte" href="/en/recipes/nordic-plate-with-egg-shrimp-and-avocado/"><img src="https://images.pexels.com/photos/36970435/pexels-photo-36970435.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Nordic plate with egg, shrimp and avocado" loading="lazy" width="600" height="400"><span class="nom">Nordic plate with egg, shrimp and avocado</span><span class="chiffres">505 kcal · 2.8 g net carbs</span></a><a class="carte" href="/en/recipes/beef-braised-in-coconut-milk-and-curry/"><img src="https://images.pexels.com/photos/30766452/pexels-photo-30766452.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Beef braised in coconut milk and curry" loading="lazy" width="600" height="400"><span class="nom">Beef braised in coconut milk and curry</span><span class="chiffres">549 kcal · 2.8 g net carbs</span></a><a class="carte" href="/en/recipes/spicy-thai-beef-salad-with-fresh-herbs/"><img src="https://images.pexels.com/photos/36548091/pexels-photo-36548091.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Spicy Thai beef salad with fresh herbs" loading="lazy" width="600" height="400"><span class="nom">Spicy Thai beef salad with fresh herbs</span><span class="chiffres">550 kcal · 3.1 g net carbs</span></a></div></section><section><h2>Breakfast</h2><div class="grille"><a class="carte" href="/en/recipes/breakfast-bowl-with-bacon-egg-and-avocado/"><img src="https://images.pexels.com/photos/33376829/pexels-photo-33376829.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Breakfast bowl with bacon, egg and avocado" loading="lazy" width="600" height="400"><span class="nom">Breakfast bowl with bacon, egg and avocado</span><span class="chiffres">606 kcal · 3.2 g net carbs</span></a><a class="carte" href="/en/recipes/eggs-benedict-with-smoked-salmon-and-hollandaise/"><img src="https://images.pexels.com/photos/13927333/pexels-photo-13927333.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Eggs Benedict with smoked salmon and hollandaise" loading="lazy" width="600" height="400"><span class="nom">Eggs Benedict with smoked salmon and hollandaise</span><span class="chiffres">593 kcal · 1.6 g net carbs</span></a><a class="carte" href="/en/recipes/mug-scrambled-eggs-with-smoked-salmon-and-chives/"><img src="https://images.pexels.com/photos/32206401/pexels-photo-32206401.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Mug scrambled eggs with smoked salmon and chives" loading="lazy" width="600" height="400"><span class="nom">Mug scrambled eggs with smoked salmon and chives</span><span class="chiffres">284 kcal · 1.8 g net carbs</span></a><a class="carte" href="/en/recipes/rolled-omelette-with-smoked-salmon-and-cream-cheese/"><img src="https://images.pexels.com/photos/33521715/pexels-photo-33521715.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Rolled omelette with smoked salmon and cream cheese" loading="lazy" width="600" height="400"><span class="nom">Rolled omelette with smoked salmon and cream cheese</span><span class="chiffres">359 kcal · 1.9 g net carbs</span></a><a class="carte" href="/en/recipes/eggs-benedict-with-spinach-bacon-and-hollandaise/"><img src="https://images.pexels.com/photos/35672945/pexels-photo-35672945.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Eggs Benedict with spinach, bacon and hollandaise" loading="lazy" width="600" height="400"><span class="nom">Eggs Benedict with spinach, bacon and hollandaise</span><span class="chiffres">674 kcal · 2.4 g net carbs</span></a></div></section><section><h2>Appetizers</h2><div class="grille"><a class="carte" href="/en/recipes/raw-beef-tartare-with-parmesan-and-basil/"><img src="https://images.pexels.com/photos/30488894/pexels-photo-30488894.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Raw beef tartare with parmesan and basil" loading="lazy" width="600" height="400"><span class="nom">Raw beef tartare with parmesan and basil</span><span class="chiffres">242 kcal · 0.2 g net carbs</span></a><a class="carte" href="/en/recipes/classic-deviled-eggs-with-mayonnaise/"><img src="https://images.pexels.com/photos/17290375/pexels-photo-17290375.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Classic deviled eggs with mayonnaise" loading="lazy" width="600" height="400"><span class="nom">Classic deviled eggs with mayonnaise</span><span class="chiffres">194 kcal · 0.8 g net carbs</span></a><a class="carte" href="/en/recipes/salmon-tartare-with-dill-and-avocado/"><img src="https://images.pexels.com/photos/34759402/pexels-photo-34759402.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Salmon tartare with dill and avocado" loading="lazy" width="600" height="400"><span class="nom">Salmon tartare with dill and avocado</span><span class="chiffres">220 kcal · 0.9 g net carbs</span></a></div></section><section><h2>Desserts</h2><div class="grille"><a class="carte" href="/en/recipes/lemon-chia-cheesecake-muffins/"><img src="https://images.pexels.com/photos/37431708/pexels-photo-37431708.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Lemon-chia cheesecake muffins" loading="lazy" width="600" height="400"><span class="nom">Lemon-chia cheesecake muffins</span><span class="chiffres">383 kcal · 3.4 g net carbs</span></a><a class="carte" href="/en/recipes/baked-coffee-mascarpone-cheesecake-tiramisu-style/"><img src="https://images.pexels.com/photos/2478330/pexels-photo-2478330.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Baked coffee-mascarpone cheesecake, tiramisu style" loading="lazy" width="600" height="400"><span class="nom">Baked coffee-mascarpone cheesecake, tiramisu style</span><span class="chiffres">384 kcal · 3.9 g net carbs</span></a><a class="carte" href="/en/recipes/fudgy-brownie-with-walnuts-and-chia-seeds/"><img src="https://images.pexels.com/photos/36500587/pexels-photo-36500587.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Fudgy brownie with walnuts and chia seeds" loading="lazy" width="600" height="400"><span class="nom">Fudgy brownie with walnuts and chia seeds</span><span class="chiffres">452 kcal · 4 g net carbs</span></a><a class="carte" href="/en/recipes/marbled-dark-chocolate-cheesecake-brownie/"><img src="https://images.pexels.com/photos/34398760/pexels-photo-34398760.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Marbled dark chocolate cheesecake brownie" loading="lazy" width="600" height="400"><span class="nom">Marbled dark chocolate cheesecake brownie</span><span class="chiffres">402 kcal · 4.1 g net carbs</span></a><a class="carte" href="/en/recipes/soft-chocolate-zucchini-fondant/"><img src="https://images.pexels.com/photos/33674415/pexels-photo-33674415.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Soft chocolate-zucchini fondant" loading="lazy" width="600" height="400"><span class="nom">Soft chocolate-zucchini fondant</span><span class="chiffres">313 kcal · 5 g net carbs</span></a><a class="carte" href="/en/recipes/velvety-chocolate-avocado-mousse/"><img src="https://images.pexels.com/photos/30822781/pexels-photo-30822781.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Velvety chocolate-avocado mousse" loading="lazy" width="600" height="400"><span class="nom">Velvety chocolate-avocado mousse</span><span class="chiffres">479 kcal · 6.5 g net carbs</span></a><a class="carte" href="/en/recipes/melting-chocolate-avocado-tartlets/"><img src="https://images.pexels.com/photos/32733940/pexels-photo-32733940.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Melting chocolate-avocado tartlets" loading="lazy" width="600" height="400"><span class="nom">Melting chocolate-avocado tartlets</span><span class="chiffres">770 kcal · 7.3 g net carbs</span></a><a class="carte" href="/en/recipes/keto-vanilla-creme-brulee/"><img src="https://images.pexels.com/photos/33474058/pexels-photo-33474058.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Keto vanilla crème brûlée" loading="lazy" width="600" height="400"><span class="nom">Keto vanilla crème brûlée</span><span class="chiffres">320 kcal · 2.4 g net carbs</span></a><a class="carte" href="/en/recipes/keto-chocolate-hazelnut-crepes/"><img src="https://images.pexels.com/photos/36048400/pexels-photo-36048400.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Keto chocolate-hazelnut crêpes" loading="lazy" width="600" height="400"><span class="nom">Keto chocolate-hazelnut crêpes</span><span class="chiffres">231 kcal · 2.7 g net carbs</span></a><a class="carte" href="/en/recipes/silky-chocolate-avocado-trifle/"><img src="https://images.pexels.com/photos/14668476/pexels-photo-14668476.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Silky chocolate-avocado trifle" loading="lazy" width="600" height="400"><span class="nom">Silky chocolate-avocado trifle</span><span class="chiffres">317 kcal · 3.2 g net carbs</span></a></div></section><section><h2>Treats</h2><div class="grille"><a class="carte" href="/en/recipes/coconut-vanilla-fat-bombs/"><img src="https://images.pexels.com/photos/3026811/pexels-photo-3026811.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Coconut-vanilla fat bombs" loading="lazy" width="600" height="400"><span class="nom">Coconut-vanilla fat bombs</span><span class="chiffres">198 kcal · 0.7 g net carbs</span></a><a class="carte" href="/en/recipes/matcha-almond-fat-bombs/"><img src="https://images.pexels.com/photos/7892667/pexels-photo-7892667.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Matcha-almond fat bombs" loading="lazy" width="600" height="400"><span class="nom">Matcha-almond fat bombs</span><span class="chiffres">189 kcal · 0.9 g net carbs</span></a><a class="carte" href="/en/recipes/frozen-coffee-mascarpone-fat-bombs/"><img src="https://images.pexels.com/photos/13939356/pexels-photo-13939356.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Frozen coffee-mascarpone fat bombs" loading="lazy" width="600" height="400"><span class="nom">Frozen coffee-mascarpone fat bombs</span><span class="chiffres">156 kcal · 0.9 g net carbs</span></a></div></section><section><h2>Finger food</h2><div class="grille"><a class="carte" href="/en/recipes/zucchini-rolls-with-smoked-salmon-and-cream-cheese/"><img src="https://images.pexels.com/photos/35074092/pexels-photo-35074092.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Zucchini rolls with smoked salmon and cream cheese" loading="lazy" width="600" height="400"><span class="nom">Zucchini rolls with smoked salmon and cream cheese</span><span class="chiffres">125 kcal · 2.2 g net carbs</span></a></div></section><section><h2>Sauces</h2><div class="grille"><a class="carte" href="/en/recipes/creamy-avocado-and-cider-vinaigrette/"><img src="https://images.pexels.com/photos/7937018/pexels-photo-7937018.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Creamy avocado and cider vinaigrette" loading="lazy" width="600" height="400"><span class="nom">Creamy avocado and cider vinaigrette</span><span class="chiffres">142 kcal · 0.3 g net carbs</span></a><a class="carte" href="/en/recipes/arugula-pesto-with-walnuts-and-parmesan/"><img src="https://images.pexels.com/photos/10756333/pexels-photo-10756333.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Arugula pesto with walnuts and parmesan" loading="lazy" width="600" height="400"><span class="nom">Arugula pesto with walnuts and parmesan</span><span class="chiffres">200 kcal · 0.6 g net carbs</span></a></div></section><section><h2>Drinks</h2><div class="grille"><a class="carte" href="/en/recipes/silky-chocolate-avocado-shake/"><img src="https://images.pexels.com/photos/13907139/pexels-photo-13907139.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;h=400&amp;fit=crop" alt="Silky chocolate-avocado shake" loading="lazy" width="600" height="400"><span class="nom">Silky chocolate-avocado shake</span><span class="chiffres">125 kcal · 2.3 g net carbs</span></a></div></section>
+  <aside class="cta">
+    <h2>Add this recipe to your weekly meal plan</h2>
+    <p>My Keto Assistant sets your macros, builds keto meal plans around your tastes and writes your shopping list. 1,200 recipes, net carbs worked out for you.</p>
+    <div class="stores">
+      <a class="badge" href="https://apps.apple.com/app/id6796480160"><svg width="20" height="24" viewBox="0 0 384 512" fill="#fff" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><span class="l1">Download on the</span><span class="l2">App Store</span></span></a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=keto.assistant.app"><svg width="20" height="22" viewBox="0 0 512 512" aria-hidden="true"><path fill="#34A853" d="M325.3 234.3 104.6 13l280.8 161.2z"/><path fill="#FBBC04" d="m385.4 174.2 66.8 38.3c19.7 11.3 19.7 39.7 0 51l-66.8 38.3-70.1-63.8z"/><path fill="#EA4335" d="M104.6 499 325.3 277.7l60.1 60.1z"/><path fill="#4285F4" d="M104.6 13 325.3 234.3l-70.1 63.8L83.5 486.4c-11.5-5.9-19.5-17.9-19.5-33.4V59.1c0-15.5 8-27.5 19.5-33.4z"/></svg><span><span class="l1">Get it on</span><span class="l2">Google Play</span></span></a>
+    </div>
+  </aside>
+</main>
+<footer><div class="inner">
+  <div><b>My Keto Assistant</b><br>A nutrition tracking tool, not a medical device.</div>
+  <div><a href="/legal/en/#confidentialite">Privacy policy</a><a href="/legal/en/#cgu">Terms of use</a></div>
+  <div><a href="mailto:contact@keto-assistant.eu">contact@keto-assistant.eu</a></div>
+</div></footer>
+</body>
+</html>
