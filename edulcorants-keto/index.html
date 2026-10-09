@@ -99,13 +99,15 @@ tr.repere th,tr.repere td{background:#F7F0D8;color:#5B5342}
 .faq h3{font-size:17px;margin:20px 0 4px;color:#2E2A1F}
 .faq p{margin:0;max-width:68ch;font-size:15.5px;color:#5B5342}
 ol.sources{font-size:13.5px;color:#5B5342;padding-left:20px;max-width:75ch}
-ol.sources li{margin:0 0 6px}
+ol.sources li{margin:0 0 6px;scroll-margin-top:14px;overflow-wrap:anywhere}
+a.ref{font-size:12px;text-decoration:none;color:#2E7D4F;vertical-align:2px;white-space:nowrap}
+a.ref:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
 </style>
 </head>
 <body>
 <header>
   <a class="logo" href="https://keto-assistant.eu/"><img src="/favicon.png" alt="">My Keto Assistant</a>
-  <nav><a href="/recettes/">Recettes keto</a><a href="/menu-keto/">Menu keto</a><a href="/aliments-keto/">Aliments keto</a><a href="/edulcorants-keto/">Édulcorants</a></nav>
+  <nav><a href="/aliments-keto/">Aliments keto</a><a href="/menu-keto/">Menu keto</a><a href="/recettes/">Recettes keto</a><a href="/edulcorants-keto/">Édulcorants</a></nav>
 </header>
 <main>
   <div class="fil"><a href="/">Accueil</a> › Édulcorants keto</div>
@@ -118,11 +120,11 @@ ol.sources li{margin:0 0 6px}
     <div class="defile"><table class="comparatif">
       <thead><tr><th scope="col">Édulcorant</th><th scope="col">Index glycémique</th><th scope="col">Calories par gramme</th><th scope="col">Pouvoir sucrant</th><th scope="col">Notre verdict</th></tr></thead>
       <tbody>
-        <tr class="repere"><th scope="row">Sucre (repère)</th><td class="n">60 à 68</td><td class="n">4</td><td class="n">100 %</td><td></td></tr>
-        <tr><th scope="row"><a href="#erythritol">Érythritol</a><small>E968 · polyol</small></th><td class="n">0</td><td class="n">0</td><td class="n">60 à 80 %</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#stevia">Stévia</a><small>E960 · édulcorant intense</small></th><td class="n">sans objet</td><td class="n">0</td><td class="n">200 à 300 fois</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#sucralose">Sucralose</a><small>E955 · édulcorant intense</small></th><td class="n">sans objet</td><td class="n">0</td><td class="n">environ 600 fois</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#allulose">Allulose</a><small>sucre rare</small></th><td class="n">sans objet</td><td class="n">0,4 (États-Unis)</td><td class="n">environ 70 %</td><td><span class="reserve">non autorisée dans l&#x27;UE</span></td></tr><tr><th scope="row"><a href="#xylitol">Xylitol</a><small>E967 · polyol</small></th><td class="n">12 à 13</td><td class="n">2,4</td><td class="n">100 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#maltitol">Maltitol</a><small>E965 · polyol</small></th><td class="n">35 à 52</td><td class="n">2,4</td><td class="n">90 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#sorbitol">Sorbitol</a><small>E420 · polyol</small></th><td class="n">9</td><td class="n">2,4</td><td class="n">40 à 70 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#isomalt">Isomalt</a><small>E953 · polyol</small></th><td class="n">2 à 9</td><td class="n">2,4</td><td class="n">45 à 65 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr>
+        <tr class="repere"><th scope="row">Sucre (repère)</th><td class="n">65</td><td class="n">4</td><td class="n">100 %</td><td></td></tr>
+        <tr><th scope="row"><a href="#erythritol">Érythritol</a><small>E968 · polyol</small></th><td class="n">0</td><td class="n">0</td><td class="n">60 à 80 %</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#stevia">Stévia</a><small>E960 · édulcorant intense</small></th><td class="n">sans objet</td><td class="n">négligeable</td><td class="n">200 à 400 fois</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#sucralose">Sucralose</a><small>E955 · édulcorant intense</small></th><td class="n">sans objet</td><td class="n">négligeable</td><td class="n">environ 600 fois</td><td><span class="etat"><span class="point vert" aria-hidden="true"></span> feu vert</span></td></tr><tr><th scope="row"><a href="#allulose">Allulose</a><small>sucre rare</small></th><td class="n">sans objet</td><td class="n">0,4 (États-Unis)</td><td class="n">70 %</td><td><span class="reserve">non autorisée dans l&#x27;UE</span></td></tr><tr><th scope="row"><a href="#xylitol">Xylitol</a><small>E967 · polyol</small></th><td class="n">13</td><td class="n">2,4</td><td class="n">100 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#maltitol">Maltitol</a><small>E965 · polyol</small></th><td class="n">35</td><td class="n">2,4</td><td class="n">90 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#sorbitol">Sorbitol</a><small>E420 · polyol</small></th><td class="n">9</td><td class="n">2,4</td><td class="n">50 à 70 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr><tr><th scope="row"><a href="#isomalt">Isomalt</a><small>E953 · polyol</small></th><td class="n">9</td><td class="n">2,4</td><td class="n">45 à 65 %</td><td><span class="etat"><span class="point rouge" aria-hidden="true"></span> à éviter</span></td></tr>
       </tbody>
     </table></div>
-    <p class="legende">Calories : valeurs de l'étiquetage européen, sauf mention. Pouvoir sucrant : par rapport au sucre, à poids égal. Index glycémique « sans objet » : l'édulcorant s'utilise en quantité infime, ou la valeur ne figure pas dans nos sources.</p>
+    <p class="legende">Index glycémique : Livesey, 2003 <a class="ref" href="#s2">[2]</a>. Calories : valeurs de l'étiquetage européen <a class="ref" href="#s1">[1]</a>, sauf mention. Pouvoir sucrant, par rapport au sucre à poids égal : <a class="ref" href="#s3">[3]</a> <a class="ref" href="#s4">[4]</a> <a class="ref" href="#s8">[8]</a>. « Sans objet » : l'édulcorant s'utilise en quantité infime, ou la valeur ne figure pas dans nos sources.</p>
   </section>
 
   <section>
@@ -136,20 +138,21 @@ ol.sources li{margin:0 0 6px}
     <div class="fiche" id="erythritol">
       <h3>Érythritol</h3>
       <p class="sous">E968 · polyol · <span class="point vert" aria-hidden="true"></span> feu vert</p>
-      <p>C'est un polyol, mais à part : le seul que la réglementation européenne compte à 0 kcal. Son index glycémique est de 0. Il sucre un peu moins que le sucre (60 à 80 %), il en faut donc un peu plus.</p>
+      <p>C'est un polyol, mais à part : le seul que la réglementation européenne compte à 0 kcal <a class="ref" href="#s1">[1]</a>. Son index glycémique est de 0 <a class="ref" href="#s2">[2]</a>. Il sucre un peu moins que le sucre (60 à 80 %), il en faut donc un peu plus.</p>
+      <p>Il est en grande partie éliminé tel quel dans les urines, sans modifier la glycémie ni l'insuline, et il est mieux toléré par l'intestin que le sorbitol ou le xylitol <a class="ref" href="#s3">[3]</a>.</p>
       <p>C'est l'édulcorant de nos recettes : 39 des 150 <a href="/recettes/">recettes du site</a> l'utilisent.</p>
     </div>
     <div class="fiche" id="stevia">
       <h3>Stévia</h3>
       <p class="sous">E960 · édulcorant intense · <span class="point vert" aria-hidden="true"></span> feu vert</p>
-      <p>Ce sont des extraits de la plante stévia, les glycosides de stéviol. Leur pouvoir sucrant est d'environ 200 à 300 fois celui du sucre selon les extraits : on en utilise une quantité infime, sans glucides à compter.</p>
-      <p>L'Autorité européenne de sécurité des aliments (EFSA) a fixé la dose journalière admissible à 4 mg par kilo de poids corporel, en équivalents stéviol.</p>
+      <p>Ce sont des extraits de la plante stévia, les glycosides de stéviol. Leur pouvoir sucrant est de 200 à 400 fois celui du sucre <a class="ref" href="#s8">[8]</a> : on en utilise une quantité infime, sans glucides à compter.</p>
+      <p>L'Autorité européenne de sécurité des aliments (EFSA) maintient la dose journalière admissible à 4 mg par kilo de poids corporel, en équivalents stéviol <a class="ref" href="#s6">[6]</a>.</p>
     </div>
     <div class="fiche" id="sucralose">
       <h3>Sucralose</h3>
       <p class="sous">E955 · édulcorant intense · <span class="point vert" aria-hidden="true"></span> feu vert</p>
-      <p>Un édulcorant intense, environ 600 fois plus sucrant que le sucre et sans calories. Comme la stévia, il s'utilise en quantité infime.</p>
-      <p>Sa dose journalière admissible est de 15 mg par kilo de poids corporel.</p>
+      <p>Un édulcorant intense, environ 600 fois plus sucrant que le sucre <a class="ref" href="#s8">[8]</a>. Comme la stévia, il s'utilise en quantité infime.</p>
+      <p>Sa dose journalière admissible est de 15 mg par kilo de poids corporel. L'EFSA l'a confirmée en 2026 <a class="ref" href="#s7">[7]</a>.</p>
     </div>
   </section>
 
@@ -158,8 +161,8 @@ ol.sources li{margin:0 0 6px}
     <div class="fiche" id="allulose">
       <h3>Allulose</h3>
       <p class="sous">sucre rare · <span class="reserve">non autorisée dans l'UE</span></p>
-      <p>On en parle beaucoup dans la cuisine cétogène américaine. C'est un « sucre rare », environ 70 % aussi sucrant que le sucre. Aux États-Unis, où elle est autorisée, elle est étiquetée à 0,4 kcal par gramme, dix fois moins que le sucre.</p>
-      <p class="alerte">À ce jour, l'allulose n'est pas autorisée comme aliment dans l'Union européenne. En juin 2025, l'EFSA a conclu que sa sécurité ne pouvait pas être établie avec le dossier qu'elle avait reçu, le demandeur n'ayant pas fourni les données réclamées. Nous ne la recommandons donc pas.</p>
+      <p>On en parle beaucoup dans la cuisine cétogène américaine. C'est un « sucre rare », qui sucre à 70 % du sucre <a class="ref" href="#s5">[5]</a>. Aux États-Unis, où elle est autorisée, elle est étiquetée à 0,4 kcal par gramme, dix fois moins que le sucre <a class="ref" href="#s9">[9]</a>.</p>
+      <p class="alerte">À ce jour, l'allulose n'est pas autorisée comme aliment dans l'Union européenne. En juin 2025, l'EFSA a conclu que sa sécurité ne pouvait pas être établie avec le dossier qu'elle avait reçu, le demandeur n'ayant pas fourni les données réclamées <a class="ref" href="#s5">[5]</a>. Nous ne la recommandons donc pas.</p>
     </div>
   </section>
 
@@ -168,18 +171,18 @@ ol.sources li{margin:0 0 6px}
     <div class="fiche" id="xylitol">
       <h3>Xylitol</h3>
       <p class="sous">E967 · polyol · <span class="point rouge" aria-hidden="true"></span> à éviter</p>
-      <p>Un polyol aussi sucrant que le sucre. Mais il est en partie assimilé : 2,4 kcal par gramme sur les étiquettes européennes, et un index glycémique de 12 à 13. Il compte comme des glucides.</p>
-      <p class="alerte">Si tu as un chien : le xylitol est dangereux pour lui. Il peut provoquer une chute brutale de sa glycémie (alerte de l'agence américaine FDA).</p>
+      <p>Un polyol aussi sucrant que le sucre <a class="ref" href="#s3">[3]</a>. Mais il est en partie assimilé : 2,4 kcal par gramme sur les étiquettes européennes, et un index glycémique de 13 <a class="ref" href="#s2">[2]</a>. Il compte comme des glucides.</p>
+      <p class="alerte">Si tu as un chien : le xylitol est dangereux pour lui. Il peut provoquer une chute brutale de sa glycémie (alerte de l'agence américaine FDA <a class="ref" href="#s10">[10]</a>).</p>
     </div>
     <div class="fiche" id="maltitol">
       <h3>Maltitol</h3>
       <p class="sous">E965 · polyol · <span class="point rouge" aria-hidden="true"></span> à éviter</p>
-      <p>Le polyol le plus proche du sucre : 90 % de son pouvoir sucrant, et un index glycémique de 35 à 52, soit plus de la moitié de celui du sucre. C'est l'exemple même du « sans sucre » qui ne convient pas en alimentation cétogène.</p>
+      <p>Le polyol le plus proche du sucre : 90 % de son pouvoir sucrant <a class="ref" href="#s3">[3]</a>, et un index glycémique de 35, soit plus de la moitié de celui du sucre (65) <a class="ref" href="#s2">[2]</a>. C'est l'exemple même du « sans sucre » qui ne convient pas en alimentation cétogène.</p>
     </div>
     <div class="fiche" id="sorbitol">
       <h3 id="isomalt">Sorbitol et isomalt</h3>
       <p class="sous">E420 et E953 · polyols · <span class="point rouge" aria-hidden="true"></span> à éviter</p>
-      <p>Deux autres polyols, moins sucrants que le sucre, comptés eux aussi à 2,4 kcal par gramme. Leur index glycémique est bas (9 pour le sorbitol, 2 à 9 pour l'isomalt), mais ils apportent des glucides à compter.</p>
+      <p>Deux autres polyols, moins sucrants que le sucre, comptés eux aussi à 2,4 kcal par gramme. Leur index glycémique est bas (9 pour l'un comme pour l'autre <a class="ref" href="#s2">[2]</a>), mais ils apportent des glucides à compter.</p>
     </div>
   </section>
 
@@ -190,12 +193,12 @@ ol.sources li{margin:0 0 6px}
       <thead><tr><th scope="col">Pour 100 g</th><th scope="col">Glucides</th><th scope="col">Dont sucres</th></tr></thead>
       <tbody><tr><th scope="row" title="Ciqual : Chocolat au lait, tablette">Chocolat au lait</th><td class="n">55,6 g</td><td class="n">53,1 g</td></tr><tr><th scope="row" title="Ciqual : Chocolat au lait sans sucres ajoutés, avec édulcorants, tablette">Chocolat au lait « sans sucres ajoutés, avec édulcorants »</th><td class="n">54,2 g</td><td class="n">11,3 g</td></tr><tr><th scope="row" title="Ciqual : Chocolat noir à 70% cacao minimum, extra, dégustation, tablette">Chocolat noir à 70 % de cacao</th><td class="n">26,9 g</td><td class="n">17,9 g</td></tr><tr><th scope="row" title="Ciqual : Chocolat noir sans sucres ajoutés, avec édulcorants, en tablette">Chocolat noir « sans sucres ajoutés, avec édulcorants »</th><td class="n">34,1 g</td><td class="n">2 g</td></tr><tr><th scope="row" title="Ciqual : Cola, sucré">Cola sucré</th><td class="n">10,2 g</td><td class="n">10,2 g</td></tr><tr><th scope="row" title="Ciqual : Cola, non sucré, avec édulcorants">Cola « non sucré, avec édulcorants »</th><td class="n">0,1 g</td><td class="n">0,1 g</td></tr></tbody>
     </table></div>
-    <p class="legende">À l'inverse, une boisson sucrée aux édulcorants intenses tombe presque à zéro : 0,1 g de glucides pour le cola « non sucré, avec édulcorants », contre 10,2 g pour le cola sucré. Source : table Ciqual de l'Anses.</p>
+    <p class="legende">À l'inverse, une boisson sucrée aux édulcorants intenses tombe presque à zéro : 0,1 g de glucides pour le cola « non sucré, avec édulcorants », contre 10,2 g pour le cola sucré. Source : table Ciqual de l'Anses <a class="ref" href="#s11">[11]</a>.</p>
   </section>
 
   <section>
     <h2>Les polyols et la digestion</h2>
-    <p>Les polyols peuvent avoir un effet laxatif quand on en consomme beaucoup. La réglementation européenne impose d'ailleurs un avertissement sur l'emballage des produits qui contiennent plus de 10 % de polyols ajoutés.</p>
+    <p>Les polyols peuvent avoir un effet laxatif quand on en consomme beaucoup. La réglementation européenne impose d'ailleurs un avertissement sur l'emballage des produits qui contiennent plus de 10 % de polyols ajoutés <a class="ref" href="#s1">[1]</a>.</p>
   </section>
 
   <section class="faq">
@@ -203,9 +206,9 @@ ol.sources li{margin:0 0 6px}
     <h3>Quel édulcorant choisir en alimentation cétogène ?</h3>
     <p>L'érythritol, la stévia ou le sucralose : ils ne font pas monter la glycémie et n'apportent pas de glucides à compter.</p>
     <h3>Le xylitol est-il compatible avec le keto ?</h3>
-    <p>Pas selon notre règle. Le <a href="#xylitol">xylitol</a> est en partie assimilé : il apporte 2,4 kcal par gramme et son index glycémique est de 12 à 13. Il compte comme des glucides.</p>
+    <p>Pas selon notre règle. Le <a href="#xylitol">xylitol</a> est en partie assimilé : il apporte 2,4 kcal par gramme et son index glycémique est de 13. Il compte comme des glucides.</p>
     <h3>Le maltitol fait-il monter la glycémie ?</h3>
-    <p>Oui, plus que les autres polyols. L'index glycémique du <a href="#maltitol">maltitol</a> est de 35 à 52, quand celui du sucre est de 60 à 68.</p>
+    <p>Oui, plus que les autres polyols. L'index glycémique du <a href="#maltitol">maltitol</a> est de 35, quand celui du sucre est de 65.</p>
     <h3>L'allulose est-elle autorisée en France ?</h3>
     <p>Pas à ce jour. L'<a href="#allulose">allulose</a> relève de la réglementation européenne sur les nouveaux aliments, et son autorisation n'a pas été accordée.</p>
   </section>
@@ -213,13 +216,17 @@ ol.sources li{margin:0 0 6px}
   <section>
     <h2>Sources</h2>
     <ol class="sources">
-      <li>Règlement (UE) n° 1169/2011 sur l'information des consommateurs : définition des glucides (annexe I), avertissement sur les polyols (annexe III), coefficients de conversion de l'énergie (annexe XIV). <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32011R1169" rel="nofollow">EUR-Lex</a></li>
-      <li>EFSA, « Safety of D-allulose as a novel food pursuant to Regulation (EU) 2015/2283 », EFSA Journal, 2025. <a href="https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2025.9468" rel="nofollow">Lire l'avis</a></li>
-      <li>EFSA, avis scientifique sur la sécurité des glycosides de stéviol, EFSA Journal, 2010. <a href="https://efsa.europa.eu/en/efsajournal/pub/1537" rel="nofollow">Lire l'avis</a></li>
-      <li>Comité scientifique de l'alimentation humaine (Commission européenne), avis sur le sucralose, 2000.</li>
-      <li>FDA, « Paws Off Xylitol; It's Dangerous for Dogs ». <a href="https://www.fda.gov/consumers/consumer-updates/paws-xylitol-its-dangerous-dogs" rel="nofollow">Lire l'alerte</a></li>
-      <li>Anses, table de composition nutritionnelle des aliments Ciqual.</li>
-      <li>Index glycémique et pouvoir sucrant des polyols : O'Donnell et Kearsley, <i>Sweeteners and Sugar Alternatives in Food Technology</i>, 2012, et O'Brien-Nabors, <i>Alternative Sweeteners</i>, 2011, valeurs reprises de l'article « Sugar alcohol » de Wikipédia.</li>
+      <li id="s1">Règlement (UE) n° 1169/2011 sur l'information des consommateurs : définition des glucides (annexe I), avertissement sur les polyols (annexe III), coefficients de conversion de l'énergie (annexe XIV). <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32011R1169" rel="nofollow">EUR-Lex</a></li>
+      <li id="s2">Livesey G., « Health potential of polyols as sugar replacers, with emphasis on low glycaemic properties », <i>Nutrition Research Reviews</i>, 2003. <a href="https://doi.org/10.1079/NRR200371" rel="nofollow">Voir la référence</a></li>
+      <li id="s3">Regnat K., Mach R. L., Mach-Aigner A. R., « Erythritol as sweetener: wherefrom and whereto? », <i>Applied Microbiology and Biotechnology</i>, 2018. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5756564/" rel="nofollow">Lire l'article</a></li>
+      <li id="s4">Grembecka M., « Sugar alcohols: their role in the modern world of sweeteners, a review », <i>European Food Research and Technology</i>, 2015. <a href="https://doi.org/10.1007/s00217-015-2437-7" rel="nofollow">Lire l'article</a></li>
+      <li id="s5">EFSA, « Safety of D-allulose as a novel food pursuant to Regulation (EU) 2015/2283 », <i>EFSA Journal</i>, 2025. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12138449/" rel="nofollow">Lire l'avis</a></li>
+      <li id="s6">EFSA, avis scientifique sur les glycosides de stéviol (E 960a-d) et la dose journalière admissible du stéviol, <i>EFSA Journal</i>, 2024. <a href="https://doi.org/10.2903/j.efsa.2024.9045" rel="nofollow">Lire l'avis</a></li>
+      <li id="s7">EFSA, « Re-evaluation of sucralose (E 955) as a food additive », <i>EFSA Journal</i>, 2026. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12911467/" rel="nofollow">Lire l'avis</a></li>
+      <li id="s8">FDA (agence américaine des aliments et des médicaments), « Aspartame and Other Sweeteners in Food », 2025. <a href="https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food" rel="nofollow">Lire la page</a></li>
+      <li id="s9">FDA, « Guidance for Industry: The Declaration of Allulose and Calories from Allulose on Nutrition and Supplement Facts Labels », 2020. <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-declaration-allulose-and-calories-allulose-nutrition-and-supplement-facts-labels" rel="nofollow">Lire le document</a></li>
+      <li id="s10">FDA, « Paws Off Xylitol; It's Dangerous for Dogs ». <a href="https://www.fda.gov/consumers/consumer-updates/paws-xylitol-its-dangerous-dogs" rel="nofollow">Lire l'alerte</a></li>
+      <li id="s11">Anses, table de composition nutritionnelle des aliments Ciqual.</li>
     </ol>
     <p class="legende">Cette page informe. Elle ne remplace pas l'avis d'un médecin ou d'un diététicien.</p>
   </section>
