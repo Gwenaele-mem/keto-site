@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alimentation cétogène (keto) : c&#x27;est quoi, comment ça marche ?</title>
+<meta name="description" content="L&#x27;alimentation cétogène expliquée simplement : le principe, ce qui se passe dans le corps, la cétose et les corps cétoniques, les premiers jours, et les précautions à prendre.">
+<link rel="canonical" href="https://keto-assistant.eu/alimentation-cetogene/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="L&#x27;alimentation cétogène, c&#x27;est quoi ?">
+<meta property="og:description" content="L&#x27;alimentation cétogène expliquée simplement : le principe, ce qui se passe dans le corps, la cétose et les corps cétoniques, les premiers jours, et les précautions à prendre.">
+<meta property="og:url" content="https://keto-assistant.eu/alimentation-cetogene/">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FDF8E7;color:#2E2A1F;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:#2E7D4F}
+header{max-width:1060px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:10px}
+header .logo{display:flex;align-items:center;gap:9px;font-family:Georgia,serif;font-size:20px;font-weight:700;color:#1B5435;text-decoration:none}
+header .logo img{width:30px;height:30px;border-radius:8px}
+header nav{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:13.5px}
+header nav a{text-decoration:none}
+header nav a[aria-current]{font-weight:700}
+details.deroulant{position:relative}
+details.deroulant summary{list-style:none;cursor:pointer;color:#2E7D4F;white-space:nowrap;padding:6px 0}
+details.deroulant summary::-webkit-details-marker{display:none}
+details.deroulant summary::after{content:"▾";margin-left:5px;font-size:11px}
+details.deroulant.actif summary{font-weight:700}
+details.deroulant summary:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+details.deroulant .sous{position:absolute;top:100%;left:-10px;z-index:20;min-width:220px;display:flex;flex-direction:column;background:#FFFDF4;border:1px solid #EFE6C8;border-radius:12px;box-shadow:0 12px 26px rgba(60,52,30,.16);padding:6px}
+details.deroulant .sous a{padding:9px 12px;border-radius:8px;font-size:14px}
+details.deroulant .sous a:hover{background:#E8F2E9}
+main{max-width:860px;margin:0 auto;padding:6px 22px 40px}
+.fil{font-size:12.5px;color:#8A8464;margin:4px 0 14px}
+.fil a{color:#8A8464;text-decoration:none}
+h1{font-family:Georgia,serif;font-size:clamp(26px,4.2vw,38px);line-height:1.18;color:#1B5435;margin:0 0 10px;text-wrap:balance}
+.infos{font-size:14px;color:#5B5342;margin:0 0 20px}
+.photo{margin:0 0 22px}
+.photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;box-shadow:0 14px 30px rgba(60,52,30,.16)}
+.photo figcaption{font-size:11.5px;color:#8A8464;margin-top:6px;text-align:right}
+.macros{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 6px}
+.macro{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:14px;padding:12px 8px;text-align:center}
+.macro b{display:block;font-size:22px;color:#1B5435;font-variant-numeric:tabular-nums}
+.macro span{font-size:12px;color:#5B5342}
+.macro.nets{background:#E8F2E9;border-color:#CFE3D3}
+.sous-macros{font-size:12.5px;color:#8A8464;margin:0 0 22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.tag{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:999px;padding:4px 12px;font-size:12.5px;color:#5B5342}
+.tag.alerte{border-color:#F0D39A;color:#8A5A0A}
+.colonnes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:28px}
+h2{font-family:Georgia,serif;font-size:22px;color:#1B5435;margin:0 0 4px}
+.pour{font-size:13px;color:#8A8464;margin:0 0 12px}
+ul.ingr{list-style:none;padding:0;margin:0}
+ul.ingr li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #EFE6C8;font-size:15px}
+ul.ingr li span:last-child{color:#5B5342;white-space:nowrap;font-variant-numeric:tabular-nums}
+ol.etapes{padding-left:22px;margin:12px 0 0}
+ol.etapes li{margin:0 0 14px;font-size:15.5px;padding-left:4px}
+.cta{margin:34px 0 0;background:#1B5435;color:#E8F2E9;border-radius:20px;padding:24px}
+.cta h2{color:#fff;margin:0 0 8px}
+.cta p{margin:0 0 18px;max-width:60ch;font-size:15px}
+.stores{display:flex;gap:12px;flex-wrap:wrap}
+.cta .essai{margin:14px 0 0;font-size:13.5px;color:#F2C14E;font-weight:600}
+.badge{display:flex;align-items:center;gap:9px;background:#2E2A1F;color:#fff;border-radius:12px;padding:9px 16px;text-decoration:none;border:1px solid #4a4536}
+.badge .l1{font-size:9.5px;opacity:.8;display:block}
+.badge .l2{font-size:14.5px;font-weight:700;display:block}
+.badge:focus-visible,.fil a:focus-visible,header a:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+footer{background:#1B5435;color:#CBE0CE;margin-top:10px}
+footer .inner{max-width:1060px;margin:0 auto;padding:22px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px}
+footer a{color:#E8F2E9;text-decoration:none;display:block;margin-bottom:6px}
+header nav a{white-space:nowrap}
+@media (max-width:640px){
+  .macros{grid-template-columns:repeat(2,1fr)}
+  .colonnes{grid-template-columns:1fr}
+  header{padding:12px 16px;flex-wrap:wrap;row-gap:4px}
+  header .logo{font-size:16px;gap:7px}
+  header .logo img{width:24px;height:24px}
+  header nav{gap:0 14px;font-size:13px;flex-wrap:wrap;justify-content:flex-start;margin-left:0;width:100%}
+  header nav>a{padding:6px 0}
+  main{padding:4px 16px 32px}
+}
+
+main{max-width:860px}
+.accroche{font-family:Georgia,serif;font-style:italic;font-size:19px;color:#5B5342;margin:0 0 18px}
+.intro{font-size:16.5px;color:#5B5342;max-width:65ch;margin:0 0 24px}
+section{margin:0 0 38px}
+section>p,section>ul{font-size:16px;color:#4A4436;max-width:66ch;margin:8px 0 12px}
+section>ul{padding-left:22px}
+section>ul li{margin:0 0 6px}
+.bref{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 30px}
+.bref div{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:14px;padding:14px 16px;font-size:14.5px;color:#5B5342}
+.bref b{display:block;font-family:Georgia,serif;font-size:22px;color:#1B5435;margin:0 0 4px;font-variant-numeric:tabular-nums}
+.schema{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:16px 0 8px}
+.voie{background:#FFFDF4;border:1px solid #EFE6C8;border-radius:16px;padding:16px 16px 18px}
+.voie.cetose{background:#E8F2E9;border-color:#CFE3D3}
+.voie h3{font-family:Georgia,serif;font-size:17px;color:#1B5435;margin:0 0 12px;text-align:center}
+.etape{background:#fff;border:1px solid #EFE6C8;border-radius:12px;padding:9px 12px;text-align:center;font-size:14.5px;color:#2E2A1F}
+.voie.cetose .etape{border-color:#CFE3D3}
+.etape small{display:block;font-size:12.5px;color:#8A8464;margin-top:2px}
+.fleche{text-align:center;color:#8A8464;font-size:16px;line-height:1.5}
+.legende{font-size:13px;color:#8A8464;margin:6px 0 0;max-width:75ch}
+.encadre{background:#FFF3D6;border:1px solid #F0D39A;color:#6B4708;border-radius:14px;padding:14px 18px;font-size:15.5px;max-width:66ch}
+.encadre b{display:block;margin-bottom:4px}
+.suite{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:12px 0 0}
+.suite a{display:block;background:#FFFDF4;border:1px solid #EFE6C8;border-radius:14px;padding:14px 16px;text-decoration:none;color:#5B5342;font-size:14.5px}
+.suite a b{display:block;color:#1B5435;font-size:16px;margin-bottom:2px}
+.suite a:hover{box-shadow:0 8px 18px rgba(60,52,30,.10)}
+.suite a:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+.faq h3{font-size:17px;margin:20px 0 4px;color:#2E2A1F}
+.faq p{margin:0;max-width:66ch;font-size:15.5px;color:#5B5342}
+ol.sources{font-size:13.5px;color:#5B5342;padding-left:20px;max-width:75ch}
+ol.sources li{margin:0 0 6px;scroll-margin-top:14px}
+a.ref{font-size:12px;text-decoration:none;color:#2E7D4F;vertical-align:2px;white-space:nowrap}
+a.ref:focus-visible{outline:3px solid #F2C14E;outline-offset:2px}
+@media (max-width:700px){
+  .bref,.schema,.suite{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="https://keto-assistant.eu/"><img src="/favicon.png" alt="">My Keto Assistant</a>
+  <nav><details class="deroulant actif"><summary>L'alimentation cétogène</summary><div class="sous"><a href="/alimentation-cetogene/" aria-current="page">C&#x27;est quoi le keto ?</a><a href="/aliments-keto/">Les aliments autorisés</a><a href="/edulcorants-keto/">Les édulcorants</a></div></details><a href="/recettes/">Les recettes</a><a href="/menu-keto/">Idée de menu</a><a href="/">My Keto Assistant</a></nav>
+</header>
+<main>
+  <div class="fil"><a href="/">Accueil</a> › Alimentation cétogène</div>
+  <h1>L&#x27;alimentation cétogène, c&#x27;est quoi ?</h1>
+  <p class="accroche">Très peu de glucides, et le corps change de carburant.</p>
+  <p class="intro">L'alimentation cétogène, qu'on appelle aussi régime cétogène ou keto, consiste à manger très peu de glucides, des protéines en quantité modérée et surtout des lipides. Privé de sucres, le corps se met à fabriquer un autre carburant à partir des graisses : les corps cétoniques. Voici comment ça marche, sans jargon.</p>
+
+  <div class="bref">
+    <div><b>20 g</b>de glucides nets par jour au plus : le repère de l'alimentation cétogène.</div>
+    <div><b>5 / 20 / 75</b>la part des glucides, des protéines et des lipides dans l'énergie de la journée, en %.</div>
+    <div><b>0,5 mmol/L</b>de corps cétoniques dans le sang : le repère habituel de la cétose.</div>
+  </div>
+
+  <section>
+    <h2>Le principe</h2>
+    <p>Dans une alimentation courante, les glucides (pain, pâtes, riz, fruits, sucre) fournissent une grande part de l'énergie. L'alimentation cétogène inverse la répartition : les glucides deviennent très rares, et les lipides prennent leur place.</p>
+    <p>Les publications médicales la définissent par moins de 50 g de glucides par jour <a class="ref" href="#s1">[1]</a>. Le repère retenu ici est plus strict : 20 g de glucides nets par jour au plus, avec une répartition de 5 % de glucides, 20 % de protéines et 75 % de lipides.</p>
+  </section>
+
+  <section>
+    <h2>Ce qui se passe dans le corps</h2>
+    <p>Le corps sait tourner avec deux carburants. Il choisit selon ce qu'on lui donne.</p>
+    <div class="schema">
+      <div class="voie">
+        <h3>Avec des glucides</h3>
+        <div class="etape">Glucides du repas</div>
+        <div class="fleche" aria-hidden="true">↓</div>
+        <div class="etape">Glucose<small>le sucre du sang</small></div>
+        <div class="fleche" aria-hidden="true">↓</div>
+        <div class="etape">Énergie<small>le surplus est mis en réserve : le glycogène</small></div>
+      </div>
+      <div class="voie cetose">
+        <h3>Avec très peu de glucides</h3>
+        <div class="etape">Graisses<small>celles du repas et celles du corps</small></div>
+        <div class="fleche" aria-hidden="true">↓</div>
+        <div class="etape">Corps cétoniques<small>fabriqués par le foie</small></div>
+        <div class="fleche" aria-hidden="true">↓</div>
+        <div class="etape">Énergie<small>pour le cerveau et le cœur, entre autres</small></div>
+      </div>
+    </div>
+    <p>Quand les glucides manquent, voici l'enchaînement <a class="ref" href="#s1">[1]</a> :</p>
+    <ul>
+      <li>Les réserves de glucose s'épuisent. Après trois à quatre jours presque sans glucides, le cerveau, qui ne sait pas utiliser les graisses, a besoin d'un autre carburant.</li>
+      <li>Le foie transforme alors des acides gras en corps cétoniques. C'est la cétogenèse.</li>
+      <li>Les corps cétoniques passent dans le sang et servent de carburant au cerveau, au cœur et aux muscles <a class="ref" href="#s2">[2]</a>.</li>
+      <li>La glycémie baisse un peu, mais reste dans les valeurs normales : le corps fabrique lui-même le glucose qu'il lui faut.</li>
+    </ul>
+    <p>Cet état s'appelle la <b>cétose</b>.</p>
+  </section>
+
+  <section>
+    <h2>Les corps cétoniques</h2>
+    <p>Il y en a trois : l'acétoacétate, le bêta-hydroxybutyrate et l'acétone <a class="ref" href="#s1">[1]</a>. Le cœur, les muscles et le cerveau les utilisent comme source d'énergie. Le foie, qui les fabrique, ne peut pas les utiliser lui-même <a class="ref" href="#s2">[2]</a>.</p>
+    <p>L'acétone, elle, est surtout éliminée par la respiration. C'est elle qui donne une haleine particulière en cétose <a class="ref" href="#s1">[1]</a>.</p>
+  </section>
+
+  <section>
+    <h2>Mesurer la cétose</h2>
+    <p>La cétose se mesure dans le sang, en mmol/L : c'est la cétonémie. Les publications parlent de cétose nutritionnelle au-dessus de 0,5 mmol/L de corps cétoniques dans le sang <a class="ref" href="#s3">[3]</a>.</p>
+    <p>Ce seuil est un repère, pas un objectif à dépasser.</p>
+  </section>
+
+  <section>
+    <h2 id="acidocetose">Cétose n'est pas acidocétose</h2>
+    <p>Les deux mots se ressemblent, pas les situations <a class="ref" href="#s1">[1]</a>.</p>
+    <ul>
+      <li><b>La cétose de l'alimentation cétogène</b> : les corps cétoniques montent au plus vers 7 à 8 mmol/L, et l'acidité du sang (le pH) ne change pas.</li>
+      <li><b>L'acidocétose diabétique</b> : ils peuvent dépasser 20 mmol/L et le sang devient acide. C'est une urgence médicale.</li>
+    </ul>
+    <p>C'est aussi pour cela qu'une personne diabétique ne change jamais d'alimentation sans son médecin.</p>
+  </section>
+
+  <section>
+    <h2>Les premiers jours</h2>
+    <p>Le changement de carburant ne passe pas toujours inaperçu. On parle de « grippe cétogène ». Une étude a analysé les témoignages de 300 personnes : les signes les plus cités sont les maux de tête, la fatigue, les nausées, les vertiges, une sensation de brouillard et des troubles digestifs. Ils sont surtout rapportés la première semaine et se raréfient après quatre semaines <a class="ref" href="#s4">[4]</a>.</p>
+  </section>
+
+  <section>
+    <h2>Avant de commencer</h2>
+    <div class="encadre"><b>L'alimentation cétogène n'est pas faite pour tout le monde.</b>Elle est contre-indiquée en cas d'insuffisance hépatique, de pancréatite, de porphyrie et de plusieurs maladies rares du métabolisme des graisses <a class="ref" href="#s5">[5]</a> <a class="ref" href="#s6">[6]</a>. Sous insuline ou sous médicament contre le diabète, elle expose à des hypoglycémies sévères si le traitement n'est pas adapté <a class="ref" href="#s5">[5]</a>. En cas de grossesse, de maladie ou de traitement, parles-en à ton médecin avant de changer d'alimentation.</div>
+  </section>
+
+  <section>
+    <h2>D'où ça vient</h2>
+    <p>L'idée a un siècle : l'alimentation cétogène a été introduite dans les années 1920 pour traiter l'épilepsie <a class="ref" href="#s7">[7]</a>. Elle reste aujourd'hui un traitement reconnu de certaines épilepsies de l'enfant qui résistent aux médicaments, avec un suivi par un neurologue et un diététicien <a class="ref" href="#s6">[6]</a>.</p>
+  </section>
+
+  <section>
+    <h2>Et dans l'assiette ?</h2>
+    <div class="suite">
+      <a href="/aliments-keto/"><b>La liste des aliments keto</b>169 aliments classés, avec leurs glucides nets.</a>
+      <a href="/menu-keto/"><b>Un menu keto d'une semaine</b>28 recettes, les glucides déjà comptés.</a>
+      <a href="/recettes/"><b>150 recettes keto</b>Avec les macros de chaque portion.</a>
+      <a href="/edulcorants-keto/"><b>Le comparatif des édulcorants</b>Lesquels choisir, lesquels éviter.</a>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <h3>Keto, cétogène : est-ce la même chose ?</h3>
+    <p>Oui. « Keto » est l'abréviation de l'anglais <i>ketogenic</i>, qui se traduit par cétogène.</p>
+    <h3>Combien de glucides par jour en alimentation cétogène ?</h3>
+    <p>Les publications médicales parlent de moins de 50 g par jour <a class="ref" href="#s1">[1]</a>. Notre repère est plus strict : 20 g de glucides nets par jour au plus.</p>
+    <h3>Qu'est-ce que la cétose ?</h3>
+    <p>C'est l'état dans lequel le foie fabrique des corps cétoniques à partir des graisses, parce que les glucides manquent. Ces corps cétoniques servent alors de carburant.</p>
+    <h3>La cétose est-elle dangereuse ?</h3>
+    <p>Elle ne doit pas être confondue avec l'<a href="#acidocetose">acidocétose</a>, qui est une urgence médicale liée surtout au diabète de type 1. L'alimentation cétogène a ses contre-indications : en cas de maladie ou de traitement, l'avis d'un médecin vient d'abord.</p>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li id="s1">Paoli A., Rubini A., Volek J. S., Grimaldi K. A., « Beyond weight loss: a review of the therapeutic uses of very-low-carbohydrate (ketogenic) diets », <i>European Journal of Clinical Nutrition</i>, 2013. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3826507/" rel="nofollow">Lire l'article</a></li>
+      <li id="s2">Puchalska P., Crawford P. A., « Multi-dimensional Roles of Ketone Bodies in Fuel Metabolism, Signaling, and Therapeutics », <i>Cell Metabolism</i>, 2017. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5313038/" rel="nofollow">Lire l'article</a></li>
+      <li id="s3">Volek J. S., Noakes T., Phinney S. D., « Rethinking fat as a fuel for endurance exercise », <i>European Journal of Sport Science</i>, 2015. <a href="https://doi.org/10.1080/17461391.2014.959564" rel="nofollow">Voir la référence</a></li>
+      <li id="s4">Bostock E. C. S. et al., « Consumer Reports of "Keto Flu" Associated With the Ketogenic Diet », <i>Frontiers in Nutrition</i>, 2020. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7082414/" rel="nofollow">Lire l'article</a></li>
+      <li id="s5">Batch J. T. et al., « Advantages and Disadvantages of the Ketogenic Diet: A Review Article », <i>Cureus</i>, 2020. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7480775/" rel="nofollow">Lire l'article</a></li>
+      <li id="s6">Kossoff E. H. et al., « Optimal clinical management of children receiving dietary therapies for epilepsy: Updated recommendations of the International Ketogenic Diet Study Group », <i>Epilepsia Open</i>, 2018. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5983110/" rel="nofollow">Lire l'article</a></li>
+      <li id="s7">Wheless J. W., « History of the ketogenic diet », <i>Epilepsia</i>, 2008. <a href="https://doi.org/10.1111/j.1528-1167.2008.01821.x" rel="nofollow">Voir la référence</a></li>
+    </ol>
+    <p class="legende">Cette page informe. Elle ne remplace pas l'avis d'un médecin ou d'un diététicien.</p>
+  </section>
+
+  <aside class="cta">
+    <h2>Suivre ses glucides sans calculer</h2>
+    <p>Dans l'appli, tu notes ce que tu manges et les glucides nets se comptent tout seuls. Tu peux aussi y suivre ta cétonémie, mesure après mesure.</p>
+    <div class="stores">
+      <a class="badge" href="https://apps.apple.com/app/id6796480160"><svg width="20" height="24" viewBox="0 0 384 512" fill="#fff" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><span class="l1">Télécharger sur</span><span class="l2">l'App Store</span></span></a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=keto.assistant.app"><svg width="20" height="22" viewBox="0 0 512 512" aria-hidden="true"><path fill="#34A853" d="M325.3 234.3 104.6 13l280.8 161.2z"/><path fill="#FBBC04" d="m385.4 174.2 66.8 38.3c19.7 11.3 19.7 39.7 0 51l-66.8 38.3-70.1-63.8z"/><path fill="#EA4335" d="M104.6 499 325.3 277.7l60.1 60.1z"/><path fill="#4285F4" d="M104.6 13 325.3 234.3l-70.1 63.8L83.5 486.4c-11.5-5.9-19.5-17.9-19.5-33.4V59.1c0-15.5 8-27.5 19.5-33.4z"/></svg><span><span class="l1">Disponible sur</span><span class="l2">Google Play</span></span></a>
+    </div>
+    <p class="essai">Journal gratuit · 7 jours d'essai Premium offerts</p>
+  </aside>
+</main>
+<footer><div class="inner">
+  <div><b>My Keto Assistant</b><br>Outil de suivi nutritionnel, pas un dispositif médical.</div>
+  <div><a href="/legal/#confidentialite">Politique de confidentialité</a><a href="/legal/#cgu">Conditions générales d'utilisation</a></div>
+  <div><a href="mailto:contact@keto-assistant.eu">contact@keto-assistant.eu</a></div>
+</div></footer>
+<script>
+(function () {
+  var d = document.querySelector('header details.deroulant');
+  if (!d) return;
+  document.addEventListener('click', function (e) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') d.removeAttribute('open'); });
+  if (window.matchMedia('(hover: hover)').matches) {
+    d.addEventListener('mouseenter', function () { d.setAttribute('open', ''); });
+    d.addEventListener('mouseleave', function () { d.removeAttribute('open'); });
+    d.querySelector('summary').addEventListener('click', function (e) { e.preventDefault(); d.setAttribute('open', ''); });
+  }
+})();
+</script>
+</body>
+</html>
